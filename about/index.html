@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>About Atlas Design &amp; Build | Bucks County, PA Design Build Firm</title>
+<meta name="description" content="Atlas Design &amp; Build is a husband and wife led design build firm renovating homes across Bucks County and Montgomery County, PA. Meet John and Rachel." />
+<link rel="canonical" href="https://atlasdesignandbuild.com/about/" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/style.css" />
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <div class="container nav-inner">
+    <a href="/" class="nav-logo">
+      <span class="nav-logo-mark">ATLAS</span>
+      <span class="nav-logo-sub">Design &amp; Build</span>
+    </a>
+    <nav class="nav-links">
+      <a href="/services/kitchen-remodeling/">Kitchen</a>
+      <a href="/services/bathroom-remodeling/">Bathroom</a>
+      <a href="/services/basement-remodeling/">Basement</a>
+      <a href="/services/whole-home-renovation/">Whole home</a>
+      <a href="/about/">About</a>
+      <a href="/guides/">Guides</a>
+      <a href="/remodeling-cost-guide/">Pricing guide</a>
+    </nav>
+    <div class="nav-actions"><a href="/#contact" class="btn btn-primary">Schedule a consultation</a></div>
+    <button class="nav-burger" id="navBurger" type="button" aria-label="Toggle menu" aria-expanded="false"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="/services/kitchen-remodeling/">Kitchen</a>
+    <a href="/services/bathroom-remodeling/">Bathroom</a>
+    <a href="/services/basement-remodeling/">Basement</a>
+    <a href="/services/whole-home-renovation/">Whole home</a>
+    <a href="/about/">About</a>
+    <a href="/guides/">Guides</a>
+    <a href="/remodeling-cost-guide/">Pricing guide</a>
+    <a href="/#contact" class="btn btn-primary">Schedule a consultation</a>
+  </div>
+  <script>
+    (function () {
+      var path = location.pathname.replace(/index\.html$/, '');
+      document.querySelectorAll('#nav .nav-links a, #nav .mobile-menu a').forEach(function (a) {
+        var href = a.getAttribute('href') || '';
+        if (href.charAt(0) !== '/' || href.indexOf('#') !== -1) return;
+        if (href === '/') return;
+        if (path === href || path.indexOf(href) === 0) a.classList.add('active');
+      });
+      var burger = document.getElementById('navBurger');
+      var menu = document.getElementById('mobileMenu');
+      if (burger && menu) burger.addEventListener('click', function () {
+        var open = menu.classList.toggle('open');
+        burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+      });
+      var nav = document.getElementById('nav');
+      window.addEventListener('scroll', function () {
+        if (window.scrollY > 8) nav.classList.add('scrolled'); else nav.classList.remove('scrolled');
+      }, { passive: true });
+    })();
+  </script>
+</header>
+
+<!-- ── Hero ─────────────────────────────────────────── -->
+<section class="page-hero" style="text-align:center;">
+  <div class="container">
+    <p class="eyebrow">About Atlas</p>
+    <h1 style="margin:0 auto;">About Atlas Design &amp; Build</h1>
+    <p class="lede" style="margin:26px auto 0;">Atlas Design &amp; Build is a husband and wife led design build firm renovating homes across Bucks County, Montgomery County and the greater Philadelphia suburbs. We specialize in custom kitchen, bathroom, basement and whole home renovations for homeowners who want elevated design, quality craftsmanship and a renovation experience that feels clear, organized and intentional from start to finish.</p>
+    <p class="lede" style="margin:18px auto 0;">We are John and Rachel. Atlas is what happens when twenty plus years of construction experience meets a husband and wife team that decided to do remodeling differently.</p>
+    <div class="hero-cta" style="justify-content:center; margin-top:36px;"><a href="/#contact" class="btn btn-primary">Schedule a consultation</a></div>
+    <div class="photo" style="margin-top:52px; aspect-ratio:16/7; border-radius:3px; background-image:url('/assets/img/about.jpg')"></div>
+  </div>
+</section>
+
+<!-- ── Our story ────────────────────────────────────── -->
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">Our story</p>
+      <h2>A builder who carries the weight so you do not have to</h2>
+    </div>
+    <div class="prose" style="margin:36px auto 0; text-align:center;">
+      <p>Atlas Design &amp; Build was founded on the belief that homeowners deserve a better remodeling experience. Too many renovations are defined by poor communication, unclear pricing, missed timelines and contractors who disappear when problems arise. Atlas was built to be the opposite.</p>
+      <p style="margin-top:18px;">The name reflects the role we believe a builder should play. From planning and design through construction and final walkthrough, we carry the weight of the project so you do not have to.</p>
+      <p style="margin-top:24px; font-family:var(--serif); font-style:italic; font-size:24px; color:var(--accent);">Built to last. Designed to impress.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ── Meet John and Rachel ─────────────────────────── -->
+<section class="section process">
+  <div class="container two-col" style="align-items:center;">
+    <div class="prose">
+      <p class="eyebrow" style="color: color-mix(in oklab, var(--accent) 70%, #fff);">The team</p>
+      <h2 style="color:var(--on-dark);">Meet John and Rachel</h2>
+      <p style="color:var(--on-dark-soft); margin-top:20px;">Atlas is owned and operated by John and Rachel, a husband and wife team based in Bucks County, Pennsylvania.</p>
+      <p style="color:var(--on-dark-soft); margin-top:16px;">John brings twenty plus years of construction experience to every project, with a background in residential renovation, custom metal and glass fabrication and the detail driven craftsmanship that defines Atlas work. He leads every project in the field.</p>
+      <p style="color:var(--on-dark-soft); margin-top:16px;">Rachel works alongside John on every project. One of us is always on site, the other is always available. That structure is intentional. It is how we keep communication clean and decisions consistent across the projects we take on.</p>
+    </div>
+    <div class="photo" style="aspect-ratio:4/5; border-radius:3px; background-image:url('/assets/img/wholehome.jpg')"></div>
+  </div>
+</section>
+
+<!-- ── How we think ─────────────────────────────────── -->
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">Our conviction</p>
+      <h2>How we think about remodeling</h2>
+    </div>
+    <div class="prose" style="margin:36px auto 0; text-align:center;">
+      <p>Too many contractors accept disorganization, poor communication and unpredictability as part of the industry. We do not. Homeowners should not have to chase down updates, wonder what is happening next or feel stressed throughout the process. The experience should feel clear, organized and intentional from start to finish.</p>
+      <p style="margin-top:18px;">That conviction shapes every decision we make about how Atlas runs. We take on a limited number of projects so each one can be planned properly and executed to a consistent standard. The same people stay responsible from the first conversation through the final walkthrough.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ── Credentials ──────────────────────────────────── -->
+<section class="section" style="padding-top:0;">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">Credentials and capabilities</p>
+      <h2>Experience you can build on</h2>
+    </div>
+    <div class="why-grid">
+      <div class="why-item"><h3>20+ years of experience</h3><p>Decades of residential work across kitchens, bathrooms, basements and whole homes.</p></div>
+      <div class="why-item"><h3>EPA lead safe certified</h3><p>Required for any pre-1978 property and not optional in our process.</p></div>
+      <div class="why-item"><h3>Project management certified</h3><p>Certified project management methods applied to every renovation, not only the largest ones.</p></div>
+      <div class="why-item"><h3>Custom metal and glass</h3><p>In house capability for stair railings, shower enclosures, glass partitions and the architectural detail work most contractors subcontract or skip.</p></div>
+      <div class="why-item"><h3>Older homes expertise</h3><p>Decades of work on Victorian rowhomes, farmhouses, mid century properties and historic Bucks County homes.</p></div>
+      <div class="why-item"><h3>Owner operated</h3><p>The same people stay responsible from first conversation through final walkthrough. No handoffs.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ── FAQ ──────────────────────────────────────────── -->
+<section class="section section-tight reviews">
+  <div class="container faq-grid">
+    <div><p class="eyebrow">Questions</p><h2>Frequently asked questions</h2></div>
+    <div class="faq-list">
+      <div class="faq-item"><h3>Who owns Atlas Design &amp; Build?</h3><p>Atlas Design &amp; Build is owned and operated by John and Rachel, a husband and wife team based in Bucks County, Pennsylvania. John leads every project in the field. Rachel works alongside John on every project.</p></div>
+      <div class="faq-item"><h3>How long has Atlas been in business?</h3><p>Atlas was founded by John and Rachel in early 2026. John brings more than twenty years of construction experience to every project, including residential renovation, custom fabrication and the detail driven craftsmanship that defines Atlas work.</p></div>
+      <div class="faq-item"><h3>What areas do you serve?</h3><p>Atlas serves homeowners across Bucks County and Montgomery County, Pennsylvania, including Doylestown, Newtown, Yardley, Langhorne, Warrington, Chalfont, New Hope, Buckingham and Solebury. Reach out if you are in a nearby town not listed.</p></div>
+      <div class="faq-item"><h3>What makes Atlas different from other remodeling companies?</h3><p>Three things. The same people stay responsible from first conversation through final walkthrough, with no handoffs between sales, design and crew. Every project is planned in detail before construction begins so timelines, materials and decisions are clear upfront. And we take on a limited number of projects so each one can be executed to a consistent standard.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ── CTA ──────────────────────────────────────────── -->
+<section class="section contact">
+  <div class="container">
+    <p class="eyebrow">Start a conversation</p>
+    <h2>The home you have been planning deserves a builder who plans just as carefully</h2>
+    <p class="lede">If you are planning a renovation in Bucks County or Montgomery County, we would be glad to hear what you have in mind. Consultations are free and there is no pressure to move forward.</p>
+    <div class="hero-cta">
+      <a href="/#contact" class="btn btn-primary">Schedule a consultation</a>
+      <a href="tel:+14845419818" class="btn btn-ghost">Call (484) 541-9818</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="/" class="nav-logo">
+          <span class="nav-logo-mark">ATLAS</span>
+          <span class="nav-logo-sub">Design &amp; Build</span>
+        </a>
+        <p>A husband and wife led design build firm serving Bucks County, Montgomery County and the greater Philadelphia suburbs. Custom kitchens, bathrooms, basements and whole home renovations.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Services</h5>
+        <ul>
+          <li><a href="/services/kitchen-remodeling/">Kitchen remodel</a></li>
+          <li><a href="/services/bathroom-remodeling/">Bathroom remodel</a></li>
+          <li><a href="/services/basement-remodeling/">Basement remodel</a></li>
+          <li><a href="/services/whole-home-renovation/">Whole home renovation</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Company</h5>
+        <ul>
+          <li><a href="/about/">About Atlas</a></li>
+          <li><a href="/guides/">Guides</a></li>
+          <li><a href="/#reviews">Reviews</a></li>
+          <li><a href="/remodeling-cost-guide/">Pricing guide</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="tel:+14845419818">(484) 541-9818</a></li>
+          <li><a href="/#contact">Schedule a consultation</a></li>
+          <li>Doylestown, Newtown, Yardley,<br />Langhorne, Warrington, New Hope</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Atlas Design &amp; Build</span>
+      <span>EPA Lead-Safe Certified &middot; Bucks County, PA</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

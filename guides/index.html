@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Remodeling Guides for Bucks County, PA | Atlas Design &amp; Build</title>
+<meta name="description" content="Clear, honest remodeling guides for Bucks County homeowners. Cost ranges, timelines and planning advice for kitchens, bathrooms, basements and whole home renovations." />
+<link rel="canonical" href="https://atlasdesignandbuild.com/guides/" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/style.css" />
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <div class="container nav-inner">
+    <a href="/" class="nav-logo">
+      <span class="nav-logo-mark">ATLAS</span>
+      <span class="nav-logo-sub">Design &amp; Build</span>
+    </a>
+    <nav class="nav-links">
+      <a href="/services/kitchen-remodeling/">Kitchen</a>
+      <a href="/services/bathroom-remodeling/">Bathroom</a>
+      <a href="/services/basement-remodeling/">Basement</a>
+      <a href="/services/whole-home-renovation/">Whole home</a>
+      <a href="/about/">About</a>
+      <a href="/guides/">Guides</a>
+      <a href="/remodeling-cost-guide/">Pricing guide</a>
+    </nav>
+    <div class="nav-actions"><a href="/#contact" class="btn btn-primary">Schedule a consultation</a></div>
+    <button class="nav-burger" id="navBurger" type="button" aria-label="Toggle menu" aria-expanded="false"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="/services/kitchen-remodeling/">Kitchen</a>
+    <a href="/services/bathroom-remodeling/">Bathroom</a>
+    <a href="/services/basement-remodeling/">Basement</a>
+    <a href="/services/whole-home-renovation/">Whole home</a>
+    <a href="/about/">About</a>
+    <a href="/guides/">Guides</a>
+    <a href="/remodeling-cost-guide/">Pricing guide</a>
+    <a href="/#contact" class="btn btn-primary">Schedule a consultation</a>
+  </div>
+  <script>
+    (function () {
+      var path = location.pathname.replace(/index\.html$/, '');
+      document.querySelectorAll('#nav .nav-links a, #nav .mobile-menu a').forEach(function (a) {
+        var href = a.getAttribute('href') || '';
+        if (href.charAt(0) !== '/' || href.indexOf('#') !== -1) return;
+        if (href === '/') return;
+        if (path === href || path.indexOf(href) === 0) a.classList.add('active');
+      });
+      var burger = document.getElementById('navBurger');
+      var menu = document.getElementById('mobileMenu');
+      if (burger && menu) burger.addEventListener('click', function () {
+        var open = menu.classList.toggle('open');
+        burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+      });
+      var nav = document.getElementById('nav');
+      window.addEventListener('scroll', function () {
+        if (window.scrollY > 8) nav.classList.add('scrolled'); else nav.classList.remove('scrolled');
+      }, { passive: true });
+    })();
+  </script>
+</header>
+
+<section class="page-hero" style="text-align:center;">
+  <div class="container">
+    <p class="eyebrow">Guides</p>
+    <h1 style="margin:0 auto;">Remodeling guides for Bucks County homeowners</h1>
+    <p class="lede" style="margin:26px auto 0;">Clear, honest guidance on what renovations cost, how long they take and how to plan them well. Written for homeowners across Bucks County and Montgomery County who want to budget with confidence before they begin.</p>
+  </div>
+</section>
+
+<section class="section" style="padding-top:24px;">
+  <div class="container">
+    <div class="guides-grid">
+
+      <article class="guide-card">
+        <a href="/guides/kitchen-remodel-cost-bucks-county/"><div class="photo" style="background-image:url('/assets/img/kitchen.jpg')"></div></a>
+        <div class="guide-card-body">
+          <span class="tag">Cost guide</span>
+          <h2>How much does a kitchen remodel cost in Bucks County?</h2>
+          <p>What kitchen renovations cost in Bucks County, what moves the number up or down and how to plan a budget that holds.</p>
+          <a href="/guides/kitchen-remodel-cost-bucks-county/" class="card-link">Read the guide &rarr;</a>
+        </div>
+      </article>
+
+      <article class="guide-card">
+        <a href="/guides/bathroom-remodel-cost-bucks-county/"><div class="photo" style="background-image:url('/assets/img/bathroom.jpg')"></div></a>
+        <div class="guide-card-body">
+          <span class="tag">Cost guide</span>
+          <h2>How much does a bathroom remodel cost in Bucks County?</h2>
+          <p>Realistic ranges for powder rooms through full primary bathrooms, plus the factors that shape the final figure.</p>
+          <a href="/guides/bathroom-remodel-cost-bucks-county/" class="card-link">Read the guide &rarr;</a>
+        </div>
+      </article>
+
+      <article class="guide-card">
+        <a href="/guides/basement-finishing-cost-bucks-county/"><div class="photo" style="background-image:url('/assets/img/basement.jpg')"></div></a>
+        <div class="guide-card-body">
+          <span class="tag">Cost guide</span>
+          <h2>How much does it cost to finish a basement in Bucks County?</h2>
+          <p>What basement finishing costs, why moisture management matters and how to plan a space that lasts.</p>
+          <a href="/guides/basement-finishing-cost-bucks-county/" class="card-link">Read the guide &rarr;</a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="/" class="nav-logo">
+          <span class="nav-logo-mark">ATLAS</span>
+          <span class="nav-logo-sub">Design &amp; Build</span>
+        </a>
+        <p>A husband and wife led design build firm serving Bucks County, Montgomery County and the greater Philadelphia suburbs. Custom kitchens, bathrooms, basements and whole home renovations.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Services</h5>
+        <ul>
+          <li><a href="/services/kitchen-remodeling/">Kitchen remodel</a></li>
+          <li><a href="/services/bathroom-remodeling/">Bathroom remodel</a></li>
+          <li><a href="/services/basement-remodeling/">Basement remodel</a></li>
+          <li><a href="/services/whole-home-renovation/">Whole home renovation</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Company</h5>
+        <ul>
+          <li><a href="/about/">About Atlas</a></li>
+          <li><a href="/guides/">Guides</a></li>
+          <li><a href="/#reviews">Reviews</a></li>
+          <li><a href="/remodeling-cost-guide/">Pricing guide</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="tel:+14845419818">(484) 541-9818</a></li>
+          <li><a href="/#contact">Schedule a consultation</a></li>
+          <li>Doylestown, Newtown, Yardley,<br />Langhorne, Warrington, New Hope</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Atlas Design &amp; Build</span>
+      <span>EPA Lead-Safe Certified &middot; Bucks County, PA</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
