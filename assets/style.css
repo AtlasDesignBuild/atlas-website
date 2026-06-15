@@ -251,6 +251,15 @@ footer { background: var(--paper-tint); padding: 72px 0 36px; border-top: 1px so
   .footer-grid { grid-template-columns: 1fr 1fr; }
   .pricing-band { padding: 48px 36px; }
 }
+@media (max-width: 768px) {
+  /* Force correct button color in case of CDN cache of old accent-color rule */
+  .btn-primary { background: #2D5A3D; color: #fff; }
+  .btn-primary:hover { background: #254B32; }
+  /* Ensure body text stays left-aligned inside centered section containers */
+  p, .hero p, .section-head p, .statement p, .contact p, .article-hero p, .article-cta p { text-align: left; }
+  /* Shrink footer logo on mobile */
+  .footer-brand .nav-logo img { max-width: 120px; }
+}
 @media (max-width: 560px) {
   body { font-size: 16px; }
   .section { padding: 64px 0; }
