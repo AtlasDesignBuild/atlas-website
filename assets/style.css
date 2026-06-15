@@ -87,8 +87,8 @@ p { margin: 0; color: var(--ink-soft); }
   border: 1px solid transparent;
   transition: background 0.2s, color 0.2s, border-color 0.2s;
 }
-.btn-primary { background: var(--accent); color: #fff; }
-.btn-primary:hover { background: var(--accent-deep); }
+.btn-primary { background: #1C3A2A; color: #fff; }
+.btn-primary:hover { background: #142b1f; }
 .btn-ghost { background: transparent; border-color: var(--ink); color: var(--ink); }
 .btn-ghost:hover { background: var(--ink); color: var(--paper); }
 .btn-ghost-light { background: transparent; border-color: rgba(243,237,225,0.4); color: var(--on-dark); }
