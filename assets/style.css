@@ -107,7 +107,7 @@ p { margin: 0; color: var(--ink-soft); text-align: left; }
 .nav-links a { padding: 8px 15px; font-family: var(--sans); font-size: 15px; font-weight: 500; letter-spacing: 0.04em; color: var(--ink-soft); white-space: nowrap; transition: color 0.15s; }
 .nav-links a:hover { color: var(--ink); }
 .nav-links a.active { color: var(--accent); }
-.nav-actions .btn { white-space: nowrap; padding-left: 20px; padding-right: 20px; }
+.nav-actions .btn { white-space: nowrap; font-size: 13px; padding-left: 14px; padding-right: 14px; }
 .nav-burger { display: none; background: none; border: none; padding: 8px; color: var(--ink); margin-left: auto; }
 .mobile-menu { display: none; position: fixed; top: 72px; left: 0; right: 0; background: color-mix(in oklab, var(--paper) 97%, transparent); -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); z-index: 49; padding: 8px var(--pad-x) 22px; }
 .mobile-menu.open { display: block; }
@@ -150,7 +150,7 @@ p { margin: 0; color: var(--ink-soft); text-align: left; }
 
 /* ── Hero ───────────────────────────────────────────── */
 .hero { padding: 80px 0 30px; text-align: center; }
-.hero-tagline { font-family: var(--serif); font-style: italic; font-size: clamp(20px, 2.4vw, 27px); color: var(--accent); margin-bottom: 18px; }
+.hero-tagline { font-family: var(--serif); font-style: italic; font-size: clamp(20px, 2.4vw, 27px); color: var(--accent); margin-bottom: 18px; text-align: center; }
 .hero h1 { max-width: 18ch; margin: 0 auto; }
 .hero-sub { max-width: 60ch; margin: 30px auto 0; }
 .hero-cta { margin-top: 38px; display: flex; gap: 14px; flex-wrap: wrap; align-items: center; justify-content: center; }
