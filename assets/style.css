@@ -76,6 +76,7 @@ p { margin: 0; color: var(--ink-soft); text-align: left; }
 .btn {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 10px;
   font-family: var(--sans);
   font-size: 13px;
@@ -91,15 +92,15 @@ p { margin: 0; color: var(--ink-soft); text-align: left; }
 .btn-primary:hover { background: #254B32; }
 .btn-ghost { background: transparent; border-color: var(--ink); color: var(--ink); }
 .btn-ghost:hover { background: var(--ink); color: var(--paper); }
-.btn-ghost-light { background: transparent; border-color: rgba(243,237,225,0.4); color: var(--on-dark); }
-.btn-ghost-light:hover { background: var(--on-dark); color: var(--ink); }
+.btn-ghost-light { background: #C9A96E; border-color: #C9A96E; color: var(--ink); }
+.btn-ghost-light:hover { background: #b8935c; border-color: #b8935c; color: var(--ink); }
 
 /* ── Nav ────────────────────────────────────────────── */
 .nav { position: sticky; top: 0; z-index: 50; padding: 18px 0; background: color-mix(in oklab, var(--paper) 80%, transparent); -webkit-backdrop-filter: blur(14px) saturate(130%); backdrop-filter: blur(14px) saturate(130%); border-bottom: 1px solid transparent; transition: border-color 0.25s, padding 0.25s; }
 .nav.scrolled { border-bottom-color: var(--line); padding: 12px 0; }
 .nav-inner { display: flex; align-items: center; justify-content: space-between; gap: 24px; }
 .nav-logo { display: flex; flex-direction: column; line-height: 1; }
-.nav-inner .nav-logo img { height: 60px; width: auto; }
+.nav-inner .nav-logo img { height: 80px; width: auto; }
 .footer-brand .nav-logo img { max-width: 160px; height: auto; }
 .nav-logo-mark { font-family: var(--sans); font-weight: 600; font-size: 20px; letter-spacing: 0.34em; color: var(--ink); }
 .nav-logo-sub { font-family: var(--serif); font-style: italic; font-size: 14px; letter-spacing: 0.04em; color: var(--accent); margin-top: 3px; }
@@ -189,9 +190,7 @@ p { margin: 0; color: var(--ink-soft); text-align: left; }
 /* ── Process ────────────────────────────────────────── */
 .process { background: var(--paper-deep); color: var(--on-dark); }
 .process h2, .process h3 { color: var(--on-dark); }
-.process .eyebrow { color: color-mix(in oklab, var(--accent) 70%, #fff); }
 .process p { color: var(--on-dark-soft); }
-.process .section-head p { color: var(--on-dark); }
 .process-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 40px; margin-top: 60px; }
 .process-step .step-num { font-family: var(--serif); font-size: 52px; color: var(--accent); line-height: 1; margin-bottom: 18px; display: block; }
 .process-step h3 { font-size: 22px; margin-bottom: 12px; }
