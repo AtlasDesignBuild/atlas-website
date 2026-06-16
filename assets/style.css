@@ -191,6 +191,7 @@ p { margin: 0; color: var(--ink-soft); text-align: left; }
 .process h2, .process h3 { color: var(--on-dark); }
 .process .eyebrow { color: color-mix(in oklab, var(--accent) 70%, #fff); }
 .process p { color: var(--on-dark-soft); }
+.process .section-head p { color: var(--on-dark); }
 .process-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 40px; margin-top: 60px; }
 .process-step .step-num { font-family: var(--serif); font-size: 52px; color: var(--accent); line-height: 1; margin-bottom: 18px; display: block; }
 .process-step h3 { font-size: 22px; margin-bottom: 12px; }
