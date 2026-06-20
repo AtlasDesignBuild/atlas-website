@@ -343,3 +343,18 @@ footer { background: var(--paper-tint); padding: 72px 0 36px; border-top: 1px so
   .article-cta .hero-cta { flex-direction: column; }
   .article-cta .hero-cta .btn { width: 100%; }
 }
+
+/* Town pill hover states */
+a[href*="/services/kitchen/"],
+a[href*="/services/bathroom/"],
+a[href*="/services/basement/"] {
+  transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+a[href*="/services/kitchen/"]:hover,
+a[href*="/services/bathroom/"]:hover,
+a[href*="/services/basement/"]:hover {
+  background: var(--forest) !important;
+  border-color: var(--forest) !important;
+  color: var(--off-white) !important;
+}
