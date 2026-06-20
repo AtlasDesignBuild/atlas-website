@@ -312,9 +312,9 @@ footer { background: var(--paper-tint); padding: 72px 0 36px; border-top: 1px so
 .article-body .lede { font-size: 21px; line-height: 1.6; color: var(--ink); margin-bottom: 8px; }
 .article-body h2 { font-size: 30px; margin: 48px 0 18px; }
 .article-body h3 { font-size: 22px; margin: 36px 0 12px; }
-.article-body p { margin-bottom: 16px; font-family: var(--sans); font-size: 17px; line-height: 1.75; color: var(--ink); }
+.article-body p { margin-bottom: 16px; font-family: var(--serif); font-size: 19px; line-height: 1.7; color: var(--ink); }
 .article-body ul { margin: 20px 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 12px; }
-.article-body ul li { position: relative; padding-left: 24px; color: var(--ink-soft); }
+.article-body ul li { position: relative; padding-left: 24px; color: var(--ink); font-family: var(--serif); font-size: 19px; line-height: 1.7; }
 .article-body ul li::before { content: ''; position: absolute; left: 0; top: 10px; width: 9px; height: 9px; border: 1px solid var(--accent); transform: rotate(45deg); }
 .cost-table { width: 100%; max-width: 100%; border-collapse: collapse; margin: 28px 0; table-layout: fixed; }
 .cost-table th, .cost-table td { text-align: left; padding: 15px 16px; border-bottom: 1px solid var(--line); overflow-wrap: break-word; }
