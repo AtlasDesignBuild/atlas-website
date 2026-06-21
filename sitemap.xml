@@ -4,7 +4,7 @@
   <!-- Homepage -->
   <url>
     <loc>https://atlasdesignandbuild.com/</loc>
-    <lastmod>2026-06-19</lastmod>
+    <lastmod>2026-06-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -12,7 +12,15 @@
   <!-- About -->
   <url>
     <loc>https://atlasdesignandbuild.com/about/</loc>
-    <lastmod>2026-06-19</lastmod>
+    <lastmod>2026-06-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Contact -->
+  <url>
+    <loc>https://atlasdesignandbuild.com/contact/</loc>
+    <lastmod>2026-06-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -20,31 +28,55 @@
   <!-- Kitchen service pages -->
   <url>
     <loc>https://atlasdesignandbuild.com/services/kitchen/</loc>
-    <lastmod>2026-06-19</lastmod>
+    <lastmod>2026-06-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://atlasdesignandbuild.com/services/kitchen/doylestown/</loc>
-    <lastmod>2026-06-19</lastmod>
+    <lastmod>2026-06-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://atlasdesignandbuild.com/services/kitchen/yardley/</loc>
-    <lastmod>2026-06-19</lastmod>
+    <lastmod>2026-06-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://atlasdesignandbuild.com/services/kitchen/newtown/</loc>
-    <lastmod>2026-06-19</lastmod>
+    <lastmod>2026-06-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://atlasdesignandbuild.com/services/kitchen/langhorne/</loc>
-    <lastmod>2026-06-19</lastmod>
+    <lastmod>2026-06-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://atlasdesignandbuild.com/services/kitchen/warrington/</loc>
+    <lastmod>2026-06-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://atlasdesignandbuild.com/services/kitchen/chalfont/</loc>
+    <lastmod>2026-06-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://atlasdesignandbuild.com/services/kitchen/new-hope/</loc>
+    <lastmod>2026-06-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://atlasdesignandbuild.com/services/kitchen/montgomery-county/</loc>
+    <lastmod>2026-06-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -52,65 +84,91 @@
   <!-- Bathroom service pages -->
   <url>
     <loc>https://atlasdesignandbuild.com/services/bathroom/</loc>
-    <lastmod>2026-06-19</lastmod>
+    <lastmod>2026-06-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://atlasdesignandbuild.com/services/bathroom/doylestown/</loc>
-    <lastmod>2026-06-19</lastmod>
+    <lastmod>2026-06-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://atlasdesignandbuild.com/services/bathroom/yardley/</loc>
-    <lastmod>2026-06-19</lastmod>
+    <lastmod>2026-06-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://atlasdesignandbuild.com/services/bathroom/newtown/</loc>
-    <lastmod>2026-06-19</lastmod>
+    <lastmod>2026-06-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://atlasdesignandbuild.com/services/bathroom/langhorne/</loc>
-    <lastmod>2026-06-19</lastmod>
+    <lastmod>2026-06-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://atlasdesignandbuild.com/services/bathroom/warrington/</loc>
+    <lastmod>2026-06-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://atlasdesignandbuild.com/services/bathroom/montgomery-county/</loc>
+    <lastmod>2026-06-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <!-- Other service pages -->
   <url>
-    <loc>https://atlasdesignandbuild.com/services/basement-remodeling/</loc>
-    <lastmod>2026-06-19</lastmod>
+    <loc>https://atlasdesignandbuild.com/services/basement/</loc>
+    <lastmod>2026-06-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://atlasdesignandbuild.com/services/whole-home-renovation/</loc>
-    <lastmod>2026-06-19</lastmod>
+    <lastmod>2026-06-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
-  <!-- Supporting pages -->
+  <!-- Guides -->
   <url>
     <loc>https://atlasdesignandbuild.com/guides/</loc>
-    <lastmod>2026-06-19</lastmod>
+    <lastmod>2026-06-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
+  <url>
+    <loc>https://atlasdesignandbuild.com/guides/kitchen-remodel-cost-bucks-county/</loc>
+    <lastmod>2026-06-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://atlasdesignandbuild.com/guides/bathroom-remodel-cost-bucks-county/</loc>
+    <lastmod>2026-06-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://atlasdesignandbuild.com/guides/basement-finishing-cost-bucks-county/</loc>
+    <lastmod>2026-06-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Supporting pages -->
   <url>
     <loc>https://atlasdesignandbuild.com/remodeling-cost-guide/</loc>
-    <lastmod>2026-06-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://atlasdesignandbuild.com/contact/</loc>
-    <lastmod>2026-06-19</lastmod>
+    <lastmod>2026-06-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
