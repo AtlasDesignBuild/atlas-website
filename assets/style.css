@@ -326,8 +326,8 @@ footer { background: var(--paper-tint); padding: 72px 0 36px; border-top: 1px so
 .callout { background: var(--paper-tint); border-left: 3px solid var(--accent); padding: 22px 26px; border-radius: 2px; margin: 30px 0; }
 .callout p { margin: 0; }
 .article-cta { background: var(--paper-deep); color: var(--on-dark); border-radius: 4px; padding: 44px 44px; margin: 56px auto 0; text-align: center; }
-.article-cta h3 { color: var(--on-dark); font-size: 28px; margin-bottom: 12px; }
-.article-cta p { color: var(--on-dark-soft); max-width: 48ch; margin: 0 auto; }
+.article-cta h3 { color: #f3ede1 !important; font-size: 28px; margin-bottom: 12px; }
+.article-cta p { color: #f3ede1 !important; max-width: 48ch; margin: 0 auto; }
 .article-cta .hero-cta { justify-content: center; margin-top: 26px; }
 
 @media (max-width: 560px) {
@@ -358,3 +358,13 @@ a[href*="/services/basement/"]:hover {
   border-color: var(--forest) !important;
   color: var(--off-white) !important;
 }
+
+.article-cta { color: #F7F6F4; }
+.article-cta h3 { color: #F7F6F4; }
+.article-cta p { color: #F7F6F4; }
+.article-cta .lede { color: #F7F6F4; }
+
+.sidebar-card ul { list-style: none; padding: 0; margin: 0; }
+.sidebar-card ul li { margin-bottom: 8px; }
+.sidebar-card ul li a { font-family: var(--sans); font-size: 14px; color: #1C3A2A; text-decoration: underline; }
+.sidebar-card ul li a:hover { color: #2D5A3D; }
