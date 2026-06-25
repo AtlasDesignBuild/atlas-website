@@ -307,9 +307,11 @@ footer { background: var(--paper-tint); padding: 72px 0 36px; border-top: 1px so
 .article { max-width: 760px; margin: 0 auto; }
 .article-hero { padding: 64px 0 0; text-align: center; }
 .article-hero h1 { font-size: clamp(34px, 4.6vw, 56px); max-width: 22ch; margin: 0 auto; }
+.article-hero .eyebrow { max-width: 720px; margin-left: auto; margin-right: auto; }
 .article-meta { font-family: var(--sans); font-size: 13px; letter-spacing: 0.04em; color: var(--ink-faint); margin-top: 20px; }
 .article-hero .photo { margin-top: 44px; aspect-ratio: 16 / 8; border-radius: 3px; text-align: left; }
 .article-body { max-width: 720px; margin: 0 auto; }
+.article-body .article-meta { font-family: var(--sans); font-size: 13px; color: var(--ink-faint); letter-spacing: 0.04em; margin-top: 20px; margin-bottom: 24px; }
 .article-body .lede { font-size: 21px; line-height: 1.6; color: var(--ink); margin-bottom: 8px; }
 .article-body h2 { font-size: 30px; margin: 48px 0 18px; }
 .article-body h3 { font-size: 22px; margin: 36px 0 12px; }
