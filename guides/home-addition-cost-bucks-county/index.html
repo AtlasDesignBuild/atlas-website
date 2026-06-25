@@ -34,6 +34,16 @@
   .sidebar-card ul li { margin-bottom: 8px; }
   .sidebar-card ul li a { font-family: 'Inter', sans-serif; font-size: 14px; color: #1C3A2A; text-decoration: none; border-bottom: 1px solid #E0D9CF; padding-bottom: 2px; }
   .sidebar-card ul li a:hover { color: #2D5A3D; border-bottom-color: #2D5A3D; }
+  .toc { background: var(--paper-tint, #F5F0E8); border: 1px solid var(--line, #E0D9CF); border-radius: 2px; padding: 24px 28px; margin: 32px 0 36px; }
+  .toc-label { font-family: 'Inter', sans-serif; font-size: 11px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #888; margin: 0 0 14px; }
+  .toc ol { margin: 0; padding-left: 20px; }
+  .toc li { font-family: 'Inter', sans-serif !important; font-size: 14px !important; line-height: 1.6 !important; color: #1C1C1A !important; margin-bottom: 6px; }
+  .toc a { color: #1C3A2A; text-decoration: none; border-bottom: 1px solid #E0D9CF; }
+  .toc a:hover { border-bottom-color: #1C3A2A; }
+  .author-bio { display: flex; gap: 20px; align-items: flex-start; border-top: 1px solid var(--line, #E0D9CF); margin-top: 48px; padding-top: 32px; }
+  .author-bio-text .author-name { font-family: 'Inter', sans-serif !important; font-size: 14px !important; font-weight: 600; color: #1C1C1A; margin: 0 0 6px; }
+  .author-bio-text .author-blurb { font-family: 'Inter', sans-serif !important; font-size: 14px !important; line-height: 1.6 !important; color: #666; margin: 0; }
+  .article-date { font-family: 'Inter', sans-serif; font-size: 13px; color: #999; margin-top: 8px; }
 </style>
 <script type="application/ld+json">
 {
@@ -129,7 +139,7 @@
 
 <section class="article-hero">
   <div class="container">
-    <div class="article-meta"><span class="eyebrow">Home additions</span></div>
+    <div class="article-meta"><span class="eyebrow">Home additions</span><p class="article-date">Published June 25, 2026</p></div>
     <h1>How much does a home addition cost in Bucks County, PA?</h1>
     <div class="article-image" style="background-image:url('/assets/img/whole-home.jpg')" role="img" aria-label="home addition cost bucks county pa"></div>
   </div>
@@ -140,7 +150,18 @@
     <div class="article-body">
       <p class="lede">A home addition in Bucks County typically runs $150,000 to $600,000 or more depending on the type of addition, its size, finish level and site conditions. Additions are among the most complex residential projects because they involve foundation work, structural engineering, new mechanical systems and integration with the existing home — all subject to local permitting that varies significantly by municipality in Bucks County.</p>
 
-      <h2>Home addition cost ranges in Bucks County, PA</h2>
+      <nav class="toc" aria-label="Table of contents">
+        <p class="toc-label">In this guide</p>
+        <ol>
+          <li><a href="#cost-ranges">Cost ranges in Bucks County</a></li>
+          <li><a href="#cost-drivers">What drives cost</a></li>
+          <li><a href="#addition-vs-renovation">Addition vs. whole home renovation</a></li>
+          <li><a href="#permitting">Permitting a home addition</a></li>
+          <li><a href="#faq">Frequently asked questions</a></li>
+        </ol>
+      </nav>
+
+      <h2 id="cost-ranges">Home addition cost ranges in Bucks County, PA</h2>
       <p>These ranges reflect recent projects completed in Bucks County and the Philadelphia suburbs. Addition costs here run higher than national averages due to local labor rates, permitting complexity and the older home stock that adds site preparation complexity.</p>
 
       <table class="cost-table">
@@ -155,7 +176,7 @@
 
       <p style="margin-top:18px;">These are planning ranges, not fixed prices. The actual cost of your addition depends on the site, the existing home's condition and structure, your finish selections and the complexity of integrating the new space with what is already there.</p>
 
-      <h2>What drives home addition costs in Bucks County</h2>
+      <h2 id="cost-drivers">What drives home addition costs in Bucks County</h2>
 
       <h3>Foundation and structural work</h3>
       <p>Every addition that extends beyond the existing footprint requires a new foundation. Foundation type — poured concrete, block or slab — depends on the site, soil conditions and the local frost depth requirement. In Bucks County, footings must extend below the frost line, which adds depth and cost compared to warmer climates. Structural engineering is required for any load-bearing changes, connections to the existing structure and roof integration.</p>
@@ -170,12 +191,12 @@
       <h3>Finish level</h3>
       <p>A room addition finished to match the existing home costs less than one with upgraded finishes, custom millwork and premium materials throughout. The integration work — matching existing trim profiles, flooring species and ceiling heights — takes time and craft regardless of finish level, but the material cost varies significantly based on selections.</p>
 
-      <h2>Addition versus whole home renovation: which is right?</h2>
+      <h2 id="addition-vs-renovation">Addition versus whole home renovation: which is right?</h2>
       <p>A home addition makes sense when the existing footprint genuinely cannot accommodate what you need and the home's lot and structure support expansion. It is a significant investment in permanent square footage.</p>
       <p style="margin-top:18px;">A whole home renovation is often more cost-effective per square foot when the goal is improving the quality and function of existing space rather than adding new space. Many homes that feel too small actually have space that is being used poorly. A renovation that reconfigures existing rooms, opens the floor plan and upgrades finishes often produces a more dramatic improvement than a modest addition at a similar or lower cost.</p>
       <p style="margin-top:18px;">We help clients think through this decision during the first consultation. There is no agenda — we tell you honestly which approach makes more sense for your home and your goals.</p>
 
-      <h2>Permitting a home addition in Bucks County</h2>
+      <h2 id="permitting">Permitting a home addition in Bucks County</h2>
       <p>Every addition in Bucks County requires a building permit from the relevant township or borough. Requirements vary by municipality but typically include:</p>
       <ul>
         <li>Architectural drawings or construction documents stamped by a licensed professional</li>
@@ -188,7 +209,7 @@
 
       <p style="margin-top:18px;">Learn more about our <a href="/services/whole-home-renovation/">whole home renovation service</a> in Bucks County, or see our guides to <a href="/guides/kitchen-remodel-cost-bucks-county/">kitchen remodel costs</a> and <a href="/guides/basement-finishing-cost-bucks-county/">basement finishing costs</a>.</p>
 
-      <h2>Frequently asked questions</h2>
+      <h2 id="faq">Frequently asked questions</h2>
       <h3>How much does a home addition cost in Bucks County?</h3>
       <p>A single room addition in Bucks County typically runs $150,000 to $300,000 depending on size, complexity and finish level. A two-story addition or a project that adds plumbing runs $350,000 to $650,000 or more. Costs here run higher than national averages due to local labor rates and permitting complexity.</p>
 
@@ -207,6 +228,14 @@
         <div class="hero-cta">
           <a href="/contact" class="btn btn-primary">Schedule a consultation</a>
           <a href="/remodeling-cost-guide/" class="btn btn-ghost-light">Get the pricing guide</a>
+        </div>
+      </div>
+
+      <div class="author-bio">
+        <svg width="60" height="60" viewBox="0 0 60 60" fill="none" style="flex-shrink:0;" aria-hidden="true"><circle cx="30" cy="30" r="30" fill="#E0D9CF"/><text x="30" y="36" text-anchor="middle" font-family="'Inter',sans-serif" font-size="18" font-weight="500" fill="#1C3A2A">RF</text></svg>
+        <div class="author-bio-text">
+          <p class="author-name">Rachel Foy</p>
+          <p class="author-blurb">Rachel Foy is co-founder of Atlas Design &amp; Build, a premium home remodeling company serving Bucks County and the surrounding Philadelphia suburbs. She specializes in helping homeowners plan smarter renovations.</p>
         </div>
       </div>
     </div>

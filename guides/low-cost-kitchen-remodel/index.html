@@ -34,6 +34,16 @@
   .sidebar-card ul li { margin-bottom: 8px; }
   .sidebar-card ul li a { font-family: 'Inter', sans-serif; font-size: 14px; color: #1C3A2A; text-decoration: none; border-bottom: 1px solid #E0D9CF; padding-bottom: 2px; }
   .sidebar-card ul li a:hover { color: #2D5A3D; border-bottom-color: #2D5A3D; }
+  .toc { background: var(--paper-tint, #F5F0E8); border: 1px solid var(--line, #E0D9CF); border-radius: 2px; padding: 24px 28px; margin: 32px 0 36px; }
+  .toc-label { font-family: 'Inter', sans-serif; font-size: 11px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #888; margin: 0 0 14px; }
+  .toc ol { margin: 0; padding-left: 20px; }
+  .toc li { font-family: 'Inter', sans-serif !important; font-size: 14px !important; line-height: 1.6 !important; color: #1C1C1A !important; margin-bottom: 6px; }
+  .toc a { color: #1C3A2A; text-decoration: none; border-bottom: 1px solid #E0D9CF; }
+  .toc a:hover { border-bottom-color: #1C3A2A; }
+  .author-bio { display: flex; gap: 20px; align-items: flex-start; border-top: 1px solid var(--line, #E0D9CF); margin-top: 48px; padding-top: 32px; }
+  .author-bio-text .author-name { font-family: 'Inter', sans-serif !important; font-size: 14px !important; font-weight: 600; color: #1C1C1A; margin: 0 0 6px; }
+  .author-bio-text .author-blurb { font-family: 'Inter', sans-serif !important; font-size: 14px !important; line-height: 1.6 !important; color: #666; margin: 0; }
+  .article-date { font-family: 'Inter', sans-serif; font-size: 13px; color: #999; margin-top: 8px; }
 </style>
 <script type="application/ld+json">
 {
@@ -124,7 +134,7 @@
 
 <section class="article-hero">
   <div class="container">
-    <div class="article-meta"><span class="eyebrow">Kitchen remodeling</span></div>
+    <div class="article-meta"><span class="eyebrow">Kitchen remodeling</span><p class="article-date">Published June 25, 2026</p></div>
     <h1>Low cost kitchen remodel: what you can do for $35k to $75k in Bucks County</h1>
     <div class="article-image" style="background-image:url('/assets/img/kitchen.jpg')" role="img" aria-label="low cost kitchen remodel bucks county pa"></div>
   </div>
@@ -135,7 +145,20 @@
     <div class="article-body">
       <p class="lede">A kitchen remodel in the $35,000 to $75,000 range is real and achievable in Bucks County. It requires clear thinking about what stays and what changes, and honest expectations about what that budget produces. This guide explains exactly what you can and cannot do at this price point, and how to make the most of every dollar.</p>
 
-      <h2>What $35,000 to $75,000 actually gets you</h2>
+      <nav class="toc" aria-label="Table of contents">
+        <p class="toc-label">In this guide</p>
+        <ol>
+          <li><a href="#what-you-get">What this budget gets you</a></li>
+          <li><a href="#keep-the-layout">Keep the layout</a></li>
+          <li><a href="#where-to-invest">Where to invest</a></li>
+          <li><a href="#where-to-save">Where you can save</a></li>
+          <li><a href="#what-it-doesnt-buy">What this budget does not buy</a></li>
+          <li><a href="#is-atlas-right">Is Atlas the right fit?</a></li>
+          <li><a href="#faq">Frequently asked questions</a></li>
+        </ol>
+      </nav>
+
+      <h2 id="what-you-get">What $35,000 to $75,000 actually gets you</h2>
       <p>In Bucks County, a kitchen remodel in this range typically includes:</p>
       <ul>
         <li>Semi-custom cabinetry from a quality line — not stock, not fully custom</li>
@@ -149,11 +172,11 @@
       </ul>
       <p style="margin-top:18px;">What it does not typically include: moving plumbing or gas lines, removing load-bearing walls, custom cabinetry, natural stone countertops, high-end appliance packages or structural changes of any kind. The layout stays exactly where it is.</p>
 
-      <h2>The single most important decision: keep the layout</h2>
+      <h2 id="keep-the-layout">The single most important decision: keep the layout</h2>
       <p>The fastest way to blow a kitchen budget is to change the layout. Moving a sink costs money. Moving a range with a gas line costs more. Removing a wall involves structural engineering, permits and temporary support systems. Each of these adds real cost that compounds. On a $35,000 to $75,000 budget, keeping the existing layout is not a compromise — it is the decision that makes the rest of the project possible.</p>
       <p style="margin-top:18px;">The good news is that layout is rarely the primary problem with an older kitchen. Most kitchens that feel dated feel that way because of cabinetry, countertops, lighting and finishes — not because the sink is in the wrong place. The right finish decisions can transform how a kitchen looks and functions without moving a single pipe.</p>
 
-      <h2>Where to invest within a tight budget</h2>
+      <h2 id="where-to-invest">Where to invest within a tight budget</h2>
       <p>When the overall budget is constrained, these are the decisions that produce the most visible return:</p>
       <ul>
         <li><strong>Cabinetry.</strong> Cabinetry covers more surface area than anything else in a kitchen. A semi-custom line from a quality manufacturer — not a big box store — provides significantly better construction, finish options and longevity than stock cabinetry at a meaningful but not dramatic cost difference.</li>
@@ -162,14 +185,14 @@
         <li><strong>Hardware.</strong> Cabinet hardware is one of the least expensive line items in a kitchen and one of the most visible. Do not cut here.</li>
       </ul>
 
-      <h2>Where you can reasonably save</h2>
+      <h2 id="where-to-save">Where you can reasonably save</h2>
       <ul>
         <li><strong>Appliances.</strong> A quality mid-range appliance package from a brand like Bosch, KitchenAid or GE Profile performs well and costs significantly less than Wolf or Sub-Zero. At this budget, a mid-range package is the right call.</li>
         <li><strong>Backsplash.</strong> A simple tile backsplash in a field tile or subway pattern costs a fraction of a stone slab backsplash and reads well alongside quality cabinetry and countertops.</li>
         <li><strong>Flooring.</strong> Refinishing existing hardwood floors instead of replacing them saves meaningful cost and usually produces a result that is indistinguishable from new.</li>
       </ul>
 
-      <h2>What this budget does not buy</h2>
+      <h2 id="what-it-doesnt-buy">What this budget does not buy</h2>
       <p>It is worth being direct about the constraints. A $35,000 to $75,000 kitchen remodel in Bucks County does not include:</p>
       <ul>
         <li>Full custom cabinetry built to the exact dimensions of your kitchen</li>
@@ -181,11 +204,11 @@
       </ul>
       <p style="margin-top:18px;">These are not signs of a failed project. They are honest parameters. A well-executed kitchen remodel at this budget looks significantly better than what was there before and holds up well over time. It is not the same as a $150,000 custom renovation — and it does not need to be.</p>
 
-      <h2>Is Atlas the right fit for a budget remodel?</h2>
+      <h2 id="is-atlas-right">Is Atlas the right fit for a budget remodel?</h2>
       <p>We are worth a conversation if you are considering a focused kitchen update in Bucks County. Our projects in the $35,000 to $75,000 range are approached with the same rigor as our larger ones — the same process, the same communication standards, the same attention to how things are installed. What changes is the scope and the selections, not the standard of execution.</p>
       <p style="margin-top:18px;">We are not the right fit if you are looking for the cheapest price in the market. We do not compete on price. We compete on how a project is managed and how it turns out. Learn more about our <a href="/services/kitchen/">kitchen remodeling service</a> or see our full <a href="/guides/kitchen-remodel-cost-bucks-county/">kitchen remodel cost guide</a>.</p>
 
-      <h2>Frequently asked questions</h2>
+      <h2 id="faq">Frequently asked questions</h2>
       <h3>What does a low cost kitchen remodel include?</h3>
       <p>A kitchen remodel in the $35,000 to $75,000 range in Bucks County typically keeps the existing layout, replaces cabinetry with semi-custom options, installs quartz countertops, updates the backsplash, replaces fixtures and adds recessed lighting. It does not include moving plumbing or gas, removing walls or installing custom cabinetry.</p>
 
@@ -201,6 +224,14 @@
         <div class="hero-cta">
           <a href="/contact" class="btn btn-primary">Schedule a consultation</a>
           <a href="/remodeling-cost-guide/" class="btn btn-ghost-light">Get the pricing guide</a>
+        </div>
+      </div>
+
+      <div class="author-bio">
+        <svg width="60" height="60" viewBox="0 0 60 60" fill="none" style="flex-shrink:0;" aria-hidden="true"><circle cx="30" cy="30" r="30" fill="#E0D9CF"/><text x="30" y="36" text-anchor="middle" font-family="'Inter',sans-serif" font-size="18" font-weight="500" fill="#1C3A2A">RF</text></svg>
+        <div class="author-bio-text">
+          <p class="author-name">Rachel Foy</p>
+          <p class="author-blurb">Rachel Foy is co-founder of Atlas Design &amp; Build, a premium home remodeling company serving Bucks County and the surrounding Philadelphia suburbs. She specializes in helping homeowners plan smarter renovations.</p>
         </div>
       </div>
     </div>

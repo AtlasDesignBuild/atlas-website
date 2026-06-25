@@ -34,6 +34,16 @@
   .sidebar-card ul li { margin-bottom: 8px; }
   .sidebar-card ul li a { font-family: 'Inter', sans-serif; font-size: 14px; color: #1C3A2A; text-decoration: none; border-bottom: 1px solid #E0D9CF; padding-bottom: 2px; }
   .sidebar-card ul li a:hover { color: #2D5A3D; border-bottom-color: #2D5A3D; }
+  .toc { background: var(--paper-tint, #F5F0E8); border: 1px solid var(--line, #E0D9CF); border-radius: 2px; padding: 24px 28px; margin: 32px 0 36px; }
+  .toc-label { font-family: 'Inter', sans-serif; font-size: 11px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #888; margin: 0 0 14px; }
+  .toc ol { margin: 0; padding-left: 20px; }
+  .toc li { font-family: 'Inter', sans-serif !important; font-size: 14px !important; line-height: 1.6 !important; color: #1C1C1A !important; margin-bottom: 6px; }
+  .toc a { color: #1C3A2A; text-decoration: none; border-bottom: 1px solid #E0D9CF; }
+  .toc a:hover { border-bottom-color: #1C3A2A; }
+  .author-bio { display: flex; gap: 20px; align-items: flex-start; border-top: 1px solid var(--line, #E0D9CF); margin-top: 48px; padding-top: 32px; }
+  .author-bio-text .author-name { font-family: 'Inter', sans-serif !important; font-size: 14px !important; font-weight: 600; color: #1C1C1A; margin: 0 0 6px; }
+  .author-bio-text .author-blurb { font-family: 'Inter', sans-serif !important; font-size: 14px !important; line-height: 1.6 !important; color: #666; margin: 0; }
+  .article-date { font-family: 'Inter', sans-serif; font-size: 13px; color: #999; margin-top: 8px; }
 </style>
 <script type="application/ld+json">
 {
@@ -129,7 +139,7 @@
 
 <section class="article-hero">
   <div class="container">
-    <div class="article-meta"><span class="eyebrow">Bathroom remodeling</span></div>
+    <div class="article-meta"><span class="eyebrow">Bathroom remodeling</span><p class="article-date">Published June 25, 2026</p></div>
     <h1>Small bathroom remodel ideas that actually work</h1>
     <div class="article-image" style="background-image:url('/assets/img/bathroom.jpg')" role="img" aria-label="small bathroom remodel ideas bucks county"></div>
   </div>
@@ -142,21 +152,36 @@
 
       <p>This guide covers the ideas and approaches that consistently produce the best results in small bathrooms, based on projects we have completed for homeowners throughout Bucks County and Montgomery County.</p>
 
-      <h2>Start with the layout, not the finishes</h2>
+      <nav class="toc" aria-label="Table of contents">
+        <p class="toc-label">In this guide</p>
+        <ol>
+          <li><a href="#layout-first">Start with the layout</a></li>
+          <li><a href="#walk-in-shower">Replace the tub with a walk-in shower</a></li>
+          <li><a href="#floating-vanity">Choose a floating vanity</a></li>
+          <li><a href="#large-format-tile">Use large format tile</a></li>
+          <li><a href="#lighting">Layer the lighting</a></li>
+          <li><a href="#mirror">Use a large mirror</a></li>
+          <li><a href="#frameless-glass">Invest in frameless glass</a></li>
+          <li><a href="#cost">What it costs in Bucks County</a></li>
+          <li><a href="#faq">Frequently asked questions</a></li>
+        </ol>
+      </nav>
+
+      <h2 id="layout-first">Start with the layout, not the finishes</h2>
       <p>The single most impactful decision in a small bathroom remodel is whether to keep the existing layout or reconfigure it. Keeping plumbing in place saves cost. But a small layout change — moving the vanity, replacing a tub with a walk-in shower, rotating the toilet — can fundamentally change how the room works. We evaluate this during the first site visit. Sometimes the existing layout is fine and finishes do all the work. Sometimes a modest reconfiguration is worth every dollar.</p>
 
-      <h2>Replace the tub with a walk-in shower</h2>
+      <h2 id="walk-in-shower">Replace the tub with a walk-in shower</h2>
       <p>In a small primary or secondary bathroom, a walk-in shower almost always makes the room feel larger and function better than a tub-shower combo. A well-designed walk-in shower with frameless glass, large format tile and a linear drain reads as a finished, intentional space rather than a compromised one. The glass keeps the sightline open across the full width of the room.</p>
       <p style="margin-top:18px;">If the bathroom is the only full bath in the home, a tub may need to stay for resale or practical reasons. In that case, a deep soaking tub in a well-proportioned alcove with a frameless glass screen feels more refined than a standard tub-shower curtain setup.</p>
 
-      <h2>Choose a floating vanity</h2>
+      <h2 id="floating-vanity">Choose a floating vanity</h2>
       <p>A wall-mounted floating vanity exposes the floor beneath it, which creates a visual sense of more floor space. It also makes the room easier to clean and allows for better lighting at floor level. A custom floating vanity built to the exact width of your wall — rather than a standard 30 or 36 inch box — uses every inch of available space without making the room feel cramped.</p>
 
-      <h2>Use large format tile consistently</h2>
+      <h2 id="large-format-tile">Use large format tile consistently</h2>
       <p>Large format tile with tight grout joints reduces the number of visual interruptions in a small space. A 24x24 or 12x24 tile on the floor and shower walls, run consistently without a border or pattern break, reads as a single cohesive surface rather than a collection of small pieces. This is one of the most effective ways to make a small bathroom feel larger without changing its footprint.</p>
       <p style="margin-top:18px;">Keep the floor and wall tile in the same family of color and tone. High contrast between floor and wall draws attention to where surfaces meet, which emphasizes the boundaries of a small room. A tonal palette softens those transitions.</p>
 
-      <h2>Layer the lighting</h2>
+      <h2 id="lighting">Layer the lighting</h2>
       <p>Most small bathrooms have a single overhead fixture and nothing else. This produces flat, unflattering light that makes the room feel smaller and less finished. Three layers of lighting transform a bathroom regardless of size:</p>
       <ul>
         <li>Ambient lighting from recessed fixtures or a ceiling-mounted fixture provides general illumination</li>
@@ -164,17 +189,17 @@
         <li>Accent lighting inside a niche, under a floating vanity or along a toe kick adds depth and visual interest</li>
       </ul>
 
-      <h2>Use a large mirror or mirrored cabinet</h2>
+      <h2 id="mirror">Use a large mirror or mirrored cabinet</h2>
       <p>A mirror that spans the full width of the vanity wall, floor to ceiling or close to it, reflects light and doubles the visual depth of the room. A recessed medicine cabinet eliminates the storage problem that plagues small bathrooms without adding any depth to the wall. Custom mirrored cabinets built to the exact width of the vanity wall are one of the details that separate a thoughtfully designed small bathroom from a generic one.</p>
 
-      <h2>Invest in frameless glass</h2>
+      <h2 id="frameless-glass">Invest in frameless glass</h2>
       <p>A frameless glass shower enclosure is one of the most impactful investments in a small bathroom. It keeps the sightline open, makes the room feel larger and reads as a high-end finish. A framed or semi-frameless enclosure, by contrast, adds visual weight and interrupts the flow of the space. Frameless glass and custom metal work is an Atlas specialty — we fabricate enclosures in-house rather than subcontracting them.</p>
 
-      <h2>What small bathroom remodels cost in Bucks County</h2>
+      <h2 id="cost">What small bathroom remodels cost in Bucks County</h2>
       <p>A powder room or compact secondary bathroom renovation typically runs $25,000 to $50,000 in Bucks County. A small primary bathroom runs $45,000 to $95,000 depending on finish level and whether the layout changes. The ideas above — frameless glass, large format tile, custom vanity, layered lighting — push toward the higher end of those ranges. They are also the details that make the biggest difference in how the finished room looks and feels.</p>
       <p style="margin-top:18px;">See our full <a href="/guides/bathroom-remodel-cost-bucks-county/">bathroom remodel cost guide</a> for a detailed breakdown, or learn more about our <a href="/services/bathroom/">bathroom remodeling service</a> in Bucks County.</p>
 
-      <h2>Frequently asked questions</h2>
+      <h2 id="faq">Frequently asked questions</h2>
       <h3>Can you remodel a very small bathroom?</h3>
       <p>Yes. Small bathrooms are some of the most rewarding projects to design. Layout reconfiguration, custom storage, frameless glass and intentional lighting can transform a compact space into something that feels significantly larger and more refined than the square footage suggests.</p>
 
@@ -193,6 +218,14 @@
         <div class="hero-cta">
           <a href="/contact" class="btn btn-primary">Schedule a consultation</a>
           <a href="/remodeling-cost-guide/" class="btn btn-ghost-light">Get the pricing guide</a>
+        </div>
+      </div>
+
+      <div class="author-bio">
+        <svg width="60" height="60" viewBox="0 0 60 60" fill="none" style="flex-shrink:0;" aria-hidden="true"><circle cx="30" cy="30" r="30" fill="#E0D9CF"/><text x="30" y="36" text-anchor="middle" font-family="'Inter',sans-serif" font-size="18" font-weight="500" fill="#1C3A2A">RF</text></svg>
+        <div class="author-bio-text">
+          <p class="author-name">Rachel Foy</p>
+          <p class="author-blurb">Rachel Foy is co-founder of Atlas Design &amp; Build, a premium home remodeling company serving Bucks County and the surrounding Philadelphia suburbs. She specializes in helping homeowners plan smarter renovations.</p>
         </div>
       </div>
     </div>
