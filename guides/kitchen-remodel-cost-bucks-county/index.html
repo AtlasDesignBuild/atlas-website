@@ -15,7 +15,7 @@
 <meta property="og:url" content="https://atlasdesignandbuild.com/guides/kitchen-remodel-cost-bucks-county/" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="/assets/style.css" />
 <script type="application/ld+json">
 {
@@ -103,14 +103,17 @@
   .author-bio { display: flex; gap: 20px; align-items: flex-start; border-top: 1px solid var(--line, #E0D9CF); margin-top: 48px; padding-top: 32px; }
   .author-bio-text .author-name { font-family: 'Inter', sans-serif !important; font-size: 14px !important; font-weight: 600; color: #1C1C1A; margin: 0 0 6px; }
   .author-bio-text .author-blurb { font-family: 'Inter', sans-serif !important; font-size: 14px !important; line-height: 1.6 !important; color: #666; margin: 0; }
-  .related-guides-section { padding: 56px 0; background: var(--paper-tint, #F5F0E8); border-top: 1px solid var(--line, #E0D9CF); }
-  .related-guides-heading { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 28px; font-weight: 500; color: #111; margin: 0 0 32px; }
-  .related-guides-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
-  .guide-tile { display: flex; flex-direction: column; background: #fff; border: 1px solid var(--line, #E0D9CF); border-radius: 2px; padding: 28px; text-decoration: none; color: inherit; transition: box-shadow 0.2s ease, border-color 0.2s ease; }
-  .guide-tile:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.08); border-color: #1C3A2A; }
-  .guide-tile-title { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 20px; font-weight: 600; color: #111; margin: 0 0 10px; line-height: 1.3; }
+  .related-guides-section { padding: 64px 0; background: #fff; border-top: 1px solid var(--line, #E0D9CF); }
+  .related-guides-heading { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 28px; font-weight: 500; color: #111; margin: 0 0 36px; }
+  .related-guides-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
+  .guide-tile { display: flex; flex-direction: column; background: #fff; border-radius: 4px; box-shadow: 0 2px 16px rgba(0,0,0,0.08); overflow: hidden; text-decoration: none; color: inherit; transition: box-shadow 0.2s ease, transform 0.2s ease; }
+  .guide-tile:hover { box-shadow: 0 6px 28px rgba(0,0,0,0.13); transform: translateY(-2px); }
+  .guide-tile-image { width: 100%; height: 200px; background-size: cover; background-position: center; display: block; }
+  .guide-tile-body { padding: 24px 24px 28px; display: flex; flex-direction: column; flex: 1; }
+  .guide-tile-category { font-family: 'Inter', sans-serif; font-size: 11px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #B8975A; margin: 0 0 10px; }
+  .guide-tile-title { font-family: 'Playfair Display', Georgia, serif; font-size: 20px; font-weight: 600; color: #111; margin: 0 0 12px; line-height: 1.3; }
   .guide-tile-desc { font-family: 'Inter', sans-serif; font-size: 14px; line-height: 1.6; color: #666; margin: 0 0 20px; flex: 1; }
-  .guide-tile-cta { font-family: 'Inter', sans-serif; font-size: 13px; font-weight: 500; color: #1C3A2A; }
+  .guide-tile-cta { font-family: 'Inter', sans-serif; font-size: 11px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #B8975A; }
   @media (max-width: 768px) { .related-guides-grid { grid-template-columns: 1fr; } }
 </style>
 </head>
@@ -283,19 +286,31 @@
     <h2 class="related-guides-heading">More remodeling guides</h2>
     <div class="related-guides-grid">
       <a href="/guides/low-cost-kitchen-remodel/" class="guide-tile">
-        <p class="guide-tile-title">Low cost kitchen remodel</p>
-        <p class="guide-tile-desc">How to get the most from a $35k–$75k kitchen remodel in Bucks County, and where to spend versus save.</p>
-        <span class="guide-tile-cta">Read the guide →</span>
+        <div class="guide-tile-image" style="background-image:url('/assets/img/kitchen.jpg')"></div>
+        <div class="guide-tile-body">
+          <p class="guide-tile-category">Kitchen Remodeling</p>
+          <p class="guide-tile-title">Low cost kitchen remodel</p>
+          <p class="guide-tile-desc">How to get the most from a $35k–$75k kitchen remodel in Bucks County, and where to spend versus save.</p>
+          <span class="guide-tile-cta">Read the guide →</span>
+        </div>
       </a>
       <a href="/guides/10x10-kitchen-remodel-cost/" class="guide-tile">
-        <p class="guide-tile-title">10x10 kitchen remodel cost</p>
-        <p class="guide-tile-desc">What a 10x10 kitchen remodel costs in Bucks County and what the industry benchmark actually means for your project.</p>
-        <span class="guide-tile-cta">Read the guide →</span>
+        <div class="guide-tile-image" style="background-image:url('/assets/img/kitchen.jpg')"></div>
+        <div class="guide-tile-body">
+          <p class="guide-tile-category">Cost Guide</p>
+          <p class="guide-tile-title">10x10 kitchen remodel cost</p>
+          <p class="guide-tile-desc">What a 10x10 kitchen remodel costs in Bucks County and what the industry benchmark actually means for your project.</p>
+          <span class="guide-tile-cta">Read the guide →</span>
+        </div>
       </a>
       <a href="/guides/bathroom-remodel-cost-bucks-county/" class="guide-tile">
-        <p class="guide-tile-title">Bathroom remodel cost in Bucks County</p>
-        <p class="guide-tile-desc">What a bathroom renovation costs in Bucks County, from powder rooms to full primary suite builds.</p>
-        <span class="guide-tile-cta">Read the guide →</span>
+        <div class="guide-tile-image" style="background-image:url('/assets/img/bathroom.jpg')"></div>
+        <div class="guide-tile-body">
+          <p class="guide-tile-category">Cost Guide</p>
+          <p class="guide-tile-title">Bathroom remodel cost in Bucks County</p>
+          <p class="guide-tile-desc">What a bathroom renovation costs in Bucks County, from powder rooms to full primary suite builds.</p>
+          <span class="guide-tile-cta">Read the guide →</span>
+        </div>
       </a>
     </div>
   </div>
