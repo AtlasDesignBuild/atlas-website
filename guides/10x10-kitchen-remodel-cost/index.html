@@ -56,11 +56,13 @@
   .guide-tile-desc { font-family: 'Inter', sans-serif; font-size: 14px; line-height: 1.6; color: #666; margin: 0 0 20px; flex: 1; }
   .guide-tile-cta { font-family: 'Inter', sans-serif; font-size: 11px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #B8975A; }
   @media (max-width: 768px) { .related-guides-grid { grid-template-columns: 1fr; } }
-  .services-chips { margin: 48px 0 0; }
-  .services-chips .services-chips-label { font-family: 'Inter', sans-serif; font-size: 11px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #8A7D5E; margin: 0 0 12px; }
-  .services-chips .services-chips-row { display: flex; flex-wrap: wrap; gap: 10px; }
-  .services-chips .service-chip { font-family: 'Inter', sans-serif; font-size: 13px; color: #1C3A2A; background: #fff; border: 1px solid #C8BFA8; border-radius: 999px; padding: 8px 16px; text-decoration: none; transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease; display: inline-flex; align-items: center; }
-  .services-chips .service-chip:hover { background: #1C3A2A; color: #F7F6F4; border-color: #1C3A2A; }
+  .author-services-card { border: 1px solid #E0D9CF; border-radius: 8px; background: #fff; padding: 1.25rem 1.5rem; margin-top: 48px; }
+  .author-services-card .author-bio { display: flex; gap: 20px; align-items: flex-start; border-top: none; margin-top: 0; padding-top: 0; }
+  .author-services-card hr { border: none; border-top: 1px solid #E0D9CF; margin: 1rem 0; }
+  .author-services-card .services-chips-label { font-family: 'Inter', sans-serif; font-size: 11px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #8A7D5E; margin: 0 0 10px; }
+  .author-services-card .services-chips-row { display: flex; flex-wrap: nowrap; overflow-x: auto; gap: 8px; }
+  .author-services-card .service-chip { font-family: 'Inter', sans-serif; font-size: 12px; color: #1C3A2A; background: #F7F6F4; border: 1px solid #C8BFA8; border-radius: 999px; padding: 5px 12px; text-decoration: none; white-space: nowrap; }
+  .author-services-card .service-chip:hover { background: #1C3A2A; color: #F7F6F4; border-color: #1C3A2A; }
 </style>
 <script type="application/ld+json">
 {
@@ -243,15 +245,15 @@
         </div>
       </div>
 
-      <div class="author-bio">
-        <svg width="60" height="60" viewBox="0 0 60 60" fill="none" style="flex-shrink:0;" aria-hidden="true"><circle cx="30" cy="30" r="30" fill="#E0D9CF"/><text x="30" y="36" text-anchor="middle" font-family="'Inter',sans-serif" font-size="18" font-weight="500" fill="#1C3A2A">RF</text></svg>
-        <div class="author-bio-text">
-          <p class="author-name">Rachel Foy</p>
-          <p class="author-blurb">Rachel Foy is co-founder of Atlas Design &amp; Build, a premium home remodeling company serving Bucks County and the surrounding Philadelphia suburbs. She specializes in helping homeowners plan smarter renovations.</p>
+      <div class="author-services-card">
+        <div class="author-bio">
+          <svg width="60" height="60" viewBox="0 0 60 60" fill="none" style="flex-shrink:0;" aria-hidden="true"><circle cx="30" cy="30" r="30" fill="#E0D9CF"/><text x="30" y="36" text-anchor="middle" font-family="'Inter',sans-serif" font-size="18" font-weight="500" fill="#1C3A2A">RF</text></svg>
+          <div class="author-bio-text">
+            <p class="author-name">Rachel Foy</p>
+            <p class="author-blurb">Rachel Foy is co-founder of Atlas Design &amp; Build, a premium home remodeling company serving Bucks County and the surrounding Philadelphia suburbs. She specializes in helping homeowners plan smarter renovations.</p>
+          </div>
         </div>
-      </div>
-
-      <div class="services-chips">
+        <hr>
         <p class="services-chips-label">OUR SERVICES</p>
         <div class="services-chips-row">
           <a href="/services/kitchen/" class="service-chip">Kitchen remodeling →</a>
