@@ -1,0 +1,7 @@
+Options -Indexes
+RewriteEngine On
+
+# 301 redirects: legacy -remodeling / -finishing URLs → canonical pages
+Redirect 301 /services/basement-remodeling/ /services/basement/
+Redirect 301 /services/bathroom-remodeling/ /services/bathroom/
+Redirect 301 /services/kitchen-remodeling/  /services/kitchen/
