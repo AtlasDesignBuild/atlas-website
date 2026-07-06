@@ -190,7 +190,7 @@ border-radius: 2px;
 footer { background: var(--paper-tint); padding: 72px 0 36px; border-top: 1px solid var(--line); }
 .footer-grid { display: grid; grid-template-columns: 1.6fr 1fr 1fr 1.2fr; gap: 48px; padding-bottom: 40px; border-bottom: 1px solid var(--line); }
 .footer-brand p { font-size: 14px; line-height: 1.65; margin-top: 18px; color: var(--ink-soft); max-width: 38ch; }
-.footer-col h5 { font-family: var(--sans); font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--ink-faint); margin: 0 0 20px; font-weight: 600; }
+.footer-col .footer-col-label { font-family: var(--sans); font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--ink-faint); margin: 0 0 20px; font-weight: 600; }
 .footer-col ul { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 12px; }
 .footer-col li, .footer-col a { font-size: 14px; color: var(--ink-soft); line-height: 1.5; transition: color 0.15s; }
 .footer-col a:hover { color: var(--accent); }
