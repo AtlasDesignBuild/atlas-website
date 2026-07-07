@@ -157,7 +157,7 @@ border-radius: 2px;
 .process { background: var(--paper-deep); color: var(--on-dark); }
 .process h2, .process h3 { color: var(--on-dark); }
 .process p { color: var(--on-dark); font-weight: 300 !important; }
-.process .lede { color: var(--on-dark-soft); }
+.process .lede { color: #8a8175; }
 .process-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 40px; margin-top: 60px; }
 .process-step .step-num { font-family: var(--serif); font-size: 52px; color: var(--accent); line-height: 1; margin-bottom: 18px; display: block; }
 .process-step h3 { font-family: 'Inter', sans-serif !important; font-weight: 300 !important; font-size: 22px; margin-bottom: 12px; }
