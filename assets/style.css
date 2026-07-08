@@ -78,8 +78,9 @@ transition: background 0.2s, color 0.2s, border-color 0.2s;
 .nav { position: sticky; top: 0; z-index: 50; padding: 18px 0; background: color-mix(in oklab, var(--paper) 80%, transparent); -webkit-backdrop-filter: blur(14px) saturate(130%); backdrop-filter: blur(14px) saturate(130%); border-bottom: 1px solid transparent; transition: border-color 0.25s, padding 0.25s; }
 .nav.scrolled { border-bottom-color: var(--line); padding: 12px 0; }
 .nav-inner { display: flex; align-items: center; justify-content: space-between; gap: 24px; }
-.nav-logo { display: flex; flex-direction: column; line-height: 1; }
-.nav-inner .nav-logo img { height: 80px; width: auto; }
+.nav-logo { display: flex; flex-direction: column; line-height: 1; flex-shrink: 0; }
+.nav-inner .nav-logo img { height: 120px; width: auto; }
+.nav .container { max-width: 1380px; }
 .footer-brand .nav-logo img { max-width: 160px; height: auto; }
 .nav-logo-mark { font-family: var(--sans); font-weight: 600; font-size: 20px; letter-spacing: 0.34em; color: var(--ink); }
 .nav-logo-sub { font-family: var(--serif); font-style: italic; font-size: 14px; letter-spacing: 0.04em; color: var(--accent); margin-top: 3px; }
@@ -89,12 +90,12 @@ transition: background 0.2s, color 0.2s, border-color 0.2s;
 .nav-links a.active { color: var(--accent); }
 .nav-actions .btn { white-space: nowrap; font-size: 13px; padding-left: 14px; padding-right: 14px; }
 .nav-burger { display: none; background: none; border: none; padding: 8px; color: var(--ink); margin-left: auto; }
-.mobile-menu { display: none; position: fixed; top: 72px; left: 0; right: 0; background: color-mix(in oklab, var(--paper) 97%, transparent); -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); z-index: 49; padding: 8px var(--pad-x) 22px; }
+.mobile-menu { display: none; position: fixed; top: 156px; left: 0; right: 0; background: color-mix(in oklab, var(--paper) 97%, transparent); -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); z-index: 49; padding: 8px var(--pad-x) 22px; }
 .mobile-menu.open { display: block; }
 .mobile-menu a { display: block; padding: 15px 4px; font-size: 16px; font-weight: 500; color: var(--ink); border-bottom: 1px solid var(--line-soft); }
 .mobile-menu a:last-child { border-bottom: none; margin-top: 10px; }
 .mobile-menu .btn-primary { color: #fff; background: #2D5A3D; text-align: center; border-radius: 2px; letter-spacing: 0.12em; text-transform: uppercase; font-size: 13px; }
-@media (max-width: 1000px) { .nav-links, .nav-actions { display: none; } .nav-burger { display: block; } }
+@media (max-width: 1220px) { .nav-links, .nav-actions { display: none; } .nav-burger { display: block; } }
 .photo {
 position: relative;
 background:
