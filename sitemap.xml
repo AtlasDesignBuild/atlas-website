@@ -137,12 +137,54 @@
     <priority>0.8</priority>
   </url>
 
-  <!-- Other service pages -->
+  <!-- Basement service pages -->
   <url>
     <loc>https://atlasdesignandbuild.com/services/basement/</loc>
-    <lastmod>2026-06-20</lastmod>
+    <lastmod>2026-07-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://atlasdesignandbuild.com/services/basement/doylestown/</loc>
+    <lastmod>2026-07-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://atlasdesignandbuild.com/services/basement/newtown/</loc>
+    <lastmod>2026-07-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://atlasdesignandbuild.com/services/basement/yardley/</loc>
+    <lastmod>2026-07-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://atlasdesignandbuild.com/services/basement/langhorne/</loc>
+    <lastmod>2026-07-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://atlasdesignandbuild.com/services/basement/warrington/</loc>
+    <lastmod>2026-07-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://atlasdesignandbuild.com/services/basement/chalfont/</loc>
+    <lastmod>2026-07-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://atlasdesignandbuild.com/services/basement/new-hope/</loc>
+    <lastmod>2026-07-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://atlasdesignandbuild.com/services/whole-home-renovation/</loc>
