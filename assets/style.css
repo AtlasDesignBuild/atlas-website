@@ -166,6 +166,8 @@ border-radius: 2px;
 .why-item { background: var(--paper); padding: 38px 34px; }
 .why-item h3 { font-family: var(--serif); font-size: 23px; font-weight: 500; margin-bottom: 12px; }
 .why-item p { font-size: 15px; }
+.town-chip { display: inline-block; padding: 10px 20px; border: 1px solid var(--line); border-radius: 2px; font-family: var(--sans); font-size: 14px; font-weight: 500; color: var(--ink); text-decoration: none; background: var(--paper-card); transition: background 0.15s, color 0.15s, border-color 0.15s; }
+.town-chip:hover { background: #C9A96E; color: #fff; border-color: #C9A96E; }
 .reviews { background: var(--paper-tint); }
 .reviews-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 34px; margin-top: 56px; }
 .review { background: var(--paper-card); border: 1px solid var(--line); border-radius: 3px; padding: 38px 34px; }
