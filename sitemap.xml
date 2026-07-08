@@ -301,6 +301,14 @@
     <priority>0.7</priority>
   </url>
 
+  <!-- Reviews -->
+  <url>
+    <loc>https://atlasdesignandbuild.com/reviews/</loc>
+    <lastmod>2026-07-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
   <!-- Supporting pages -->
   <url>
     <loc>https://atlasdesignandbuild.com/remodeling-cost-guide/</loc>
