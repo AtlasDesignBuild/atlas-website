@@ -141,7 +141,7 @@ border-radius: 2px;
 .section-head > p:not(.eyebrow) { font-size: 19px; line-height: 1.7; color: var(--ink-soft); }
 .statement { max-width: 66ch; margin: 0 auto; text-align: center; }
 .statement .eyebrow { margin-bottom: 22px; }
-.statement-body { margin-top: 22px; }
+.statement-body { margin-top: 22px; font-size: 19px; line-height: 1.7; }
 .statement-body p + p { margin-top: 20px; }
 .services-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 36px; margin-top: 56px; }
 .service-card { background: var(--paper-card); border: 1px solid var(--line); border-radius: 3px; overflow: hidden; display: flex; flex-direction: column; transition: box-shadow 0.25s, transform 0.25s; }
