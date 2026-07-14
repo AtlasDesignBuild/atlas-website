@@ -95,7 +95,8 @@ transition: background 0.2s, color 0.2s, border-color 0.2s;
 .mobile-menu a { display: block; padding: 15px 4px; font-size: 16px; font-weight: 500; color: var(--ink); border-bottom: 1px solid var(--line-soft); }
 .mobile-menu a:last-child { border-bottom: none; margin-top: 10px; }
 .mobile-menu .btn-primary { color: #fff; background: #2D5A3D; text-align: center; border-radius: 2px; letter-spacing: 0.12em; text-transform: uppercase; font-size: 13px; }
-@media (max-width: 1220px) { .nav-links, .nav-actions { display: none; } .nav-burger { display: block; } }
+@media (max-width: 1220px) { .nav-links, .nav-actions { display: none; } .nav-burger { display: block; } .nav-inner .nav-logo img { height: 60px; } .mobile-menu { top: 96px; } }
+@media (max-width: 560px) { .nav-inner .nav-logo img { height: 48px; } .mobile-menu { top: 84px; } }
 .photo {
 position: relative;
 background:
