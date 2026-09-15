@@ -17,6 +17,8 @@ Replace with Atlas project photography when available.
 | `guide-timeless-interior.jpg` | `CCQi3pV95k0` | Clay Banks ([@claybanks](https://unsplash.com/@claybanks)) | /guides/timed-vs-timeless-remodel/ |
 | `guide-small-kitchen.jpg` | `avPVKD07Fcg` | Clay Banks ([@claybanks](https://unsplash.com/@claybanks)) | /guides/small-kitchen-ideas/ |
 | `guide-backsplash-tile.jpg` | `MvY303vrKR0` | Zac Gudakov ([@zacgudakov](https://unsplash.com/@zacgudakov)) | /guides/kitchen-backsplash-tile-ideas/ |
+| `guide-wainscoting-trim.jpg` | `5gYM1p41ryo` | ANGIE BAONGOC ([@angiebaongoc](https://unsplash.com/@angiebaongoc)) | /guides/wainscoting-trim-ideas/ |
+| `guide-small-bathroom-elevated.jpg` | `4oRw53kmhy8` | Peter Muniz ([@petermuniz](https://unsplash.com/@petermuniz)) | /guides/small-bathroom-ideas-beyond-basic/ |
 
 ---
 
