@@ -24,6 +24,7 @@ Replace with Atlas project photography when available.
 | `whole-home-easton-hero.jpg` | `tHkJAMcO3QE` | Francesca Tosolini ([@francescatosolini](https://unsplash.com/@francescatosolini)) | /services/whole-home-renovation/easton/ |
 | `tile-easton-hero.jpg` | `VCUbsNJdZpQ` | Zac Gudakov ([@zacgudakov](https://unsplash.com/@zacgudakov)) | /services/tile-installation/easton/ |
 | `millwork-easton-hero.jpg` | `rwZREhIetfc` | Declan Sun ([@declansun](https://unsplash.com/@declansun)) | /services/interior-millwork/easton/ |
+| `kitchen-forks-township-hero.jpg` | `o-uPDNNSsDA` | Zac Gudakov ([@zacgudakov](https://unsplash.com/@zacgudakov)) | /services/kitchen/forks-township/ |
 
 ---
 
