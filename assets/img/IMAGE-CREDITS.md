@@ -26,6 +26,7 @@ Replace with Atlas project photography when available.
 | `millwork-easton-hero.jpg` | `rwZREhIetfc` | Declan Sun ([@declansun](https://unsplash.com/@declansun)) | /services/interior-millwork/easton/ |
 | `kitchen-forks-township-hero.jpg` | `o-uPDNNSsDA` | Zac Gudakov ([@zacgudakov](https://unsplash.com/@zacgudakov)) | /services/kitchen/forks-township/ |
 | `bathroom-forks-township-hero.jpg` | `Aac7IlKnYX8` | Steven Ungermann ([@steven_ung](https://unsplash.com/@steven_ung)) | /services/bathroom/forks-township/ |
+| `basement-forks-township-hero.jpg` | `GWYeRJ3xxXU` | David Marquez ([@davidmarquezphotog](https://unsplash.com/@davidmarquezphotog)) | /services/basement/forks-township/ |
 
 ---
 
