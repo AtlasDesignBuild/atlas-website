@@ -20,6 +20,7 @@ Replace with Atlas project photography when available.
 | `guide-wainscoting-trim.jpg` | `5gYM1p41ryo` | ANGIE BAONGOC ([@angiebaongoc](https://unsplash.com/@angiebaongoc)) | /guides/wainscoting-trim-ideas/ |
 | `guide-small-bathroom-elevated.jpg` | `4oRw53kmhy8` | Peter Muniz ([@petermuniz](https://unsplash.com/@petermuniz)) | /guides/small-bathroom-ideas-beyond-basic/ |
 | `bathroom-easton-hero.jpg` | `6BJu73-UJpg` | Christian Mackie ([@christianmackie](https://unsplash.com/@christianmackie)) | /services/bathroom/easton/ |
+| `basement-easton-hero.jpg` | `YBxrveqHAFU` | Smart Renovations ([@smart_renovations](https://unsplash.com/@smart_renovations)) | /services/basement/easton/ |
 
 ---
 
