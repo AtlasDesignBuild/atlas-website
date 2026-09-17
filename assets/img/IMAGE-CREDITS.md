@@ -28,6 +28,7 @@ Replace with Atlas project photography when available.
 | `bathroom-forks-township-hero.jpg` | `Aac7IlKnYX8` | Steven Ungermann ([@steven_ung](https://unsplash.com/@steven_ung)) | /services/bathroom/forks-township/ |
 | `basement-forks-township-hero.jpg` | `GWYeRJ3xxXU` | David Marquez ([@davidmarquezphotog](https://unsplash.com/@davidmarquezphotog)) | /services/basement/forks-township/ |
 | `whole-home-forks-township-hero.jpg` | `9rYfG8sWRVo` | Douglas Sheppard ([@candjstudios](https://unsplash.com/@candjstudios)) | /services/whole-home-renovation/forks-township/ |
+| `tile-forks-township-hero.jpg` | `BTkhl3DXafU` | Brian Wangenheim ([@brianwangenheim](https://unsplash.com/@brianwangenheim)) | /services/tile-installation/forks-township/ |
 
 ---
 
