@@ -23,6 +23,7 @@ Replace with Atlas project photography when available.
 | `basement-easton-hero.jpg` | `YBxrveqHAFU` | Smart Renovations ([@smart_renovations](https://unsplash.com/@smart_renovations)) | /services/basement/easton/ |
 | `whole-home-easton-hero.jpg` | `tHkJAMcO3QE` | Francesca Tosolini ([@francescatosolini](https://unsplash.com/@francescatosolini)) | /services/whole-home-renovation/easton/ |
 | `tile-easton-hero.jpg` | `VCUbsNJdZpQ` | Zac Gudakov ([@zacgudakov](https://unsplash.com/@zacgudakov)) | /services/tile-installation/easton/ |
+| `millwork-easton-hero.jpg` | `rwZREhIetfc` | Declan Sun ([@declansun](https://unsplash.com/@declansun)) | /services/interior-millwork/easton/ |
 
 ---
 
