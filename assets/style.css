@@ -315,3 +315,15 @@ h1 { font-size: clamp(32px, 9vw, 46px); }
 .thank-you-hero { padding: 120px 0 140px; }
 .thank-you-hero .hero-cta { justify-content: center; }
 @media (max-width: 560px) { .thank-you-hero { padding: 64px 0 88px; } }
+/* Mobile: stack inline-styled grids, tighten hero so the CTA sits above the fold */
+@media (max-width: 760px) {
+  .why-grid[style], .services-grid[style], .reviews-grid[style] { grid-template-columns: 1fr !important; }
+  .why-item { padding: 28px 24px; }
+}
+@media (max-width: 560px) {
+  .hero { padding-top: 12px; }
+  .hero-tagline { margin-bottom: 8px; }
+  .hero-sub { margin-top: 16px; font-size: 16px; line-height: 1.6; }
+  .hero-cta { margin-top: 22px; }
+  .hero-cta .btn { width: 100%; }
+}
