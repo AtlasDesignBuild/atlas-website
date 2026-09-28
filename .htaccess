@@ -5,3 +5,11 @@ RewriteEngine On
 Redirect 301 /services/basement-remodeling/ /services/basement/
 Redirect 301 /services/bathroom-remodeling/ /services/bathroom/
 Redirect 301 /services/kitchen-remodeling/  /services/kitchen/
+
+# 301 redirects: old Wix URLs → current pages
+RedirectMatch 301 ^/kitchen/?$ /services/kitchen/
+RedirectMatch 301 ^/bathrooms/?$ /services/bathroom/
+RedirectMatch 301 ^/contact-8/?$ /contact/
+RedirectMatch 301 ^/inquiries/?$ /contact/
+RedirectMatch 301 ^/home/?$ /
+RedirectMatch 301 ^/whole-home-additions-1/?$ /services/whole-home-renovation/
