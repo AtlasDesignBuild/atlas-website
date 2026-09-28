@@ -141,17 +141,22 @@
         <li><span class="rn">III</span>How to plan, budget and sequence your project for a clean result</li>
       </ul>
 
-      <form class="guide-form" id="guideForm">
+      <form class="guide-form" action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="dca56557-72fc-4d13-b8e0-30b6b60cba84">
+        <input type="hidden" name="subject" value="New cost guide download from atlasdesignandbuild.com">
+        <input type="hidden" name="from_name" value="Atlas website - cost guide">
+        <input type="hidden" name="redirect" value="https://atlasdesignandbuild.com/remodeling-cost-guide-thank-you/">
+        <input type="checkbox" name="botcheck" style="display:none;">
         <label class="field-label">Tell us a little about your project</label>
         <div class="row">
-          <input type="text" placeholder="First name" required aria-label="First name" />
-          <input type="text" placeholder="Last name" required aria-label="Last name" />
+          <input type="text" name="first_name" placeholder="First name" required aria-label="First name" />
+          <input type="text" name="last_name" placeholder="Last name" required aria-label="Last name" />
         </div>
         <div class="row">
-          <input type="email" placeholder="Email" required aria-label="Email" />
-          <input type="tel" placeholder="Phone number" required aria-label="Phone number" />
+          <input type="email" name="email" placeholder="Email" required aria-label="Email" />
+          <input type="tel" name="phone" placeholder="Phone number" required aria-label="Phone number" />
         </div>
-        <select required aria-label="Project type">
+        <select name="project_type" required aria-label="Project type">
           <option value="" disabled selected>What project type are you interested in?</option>
           <option>Kitchen</option>
           <option>Bathroom</option>
@@ -160,17 +165,8 @@
           <option>Multiple rooms</option>
           <option>Not sure yet</option>
         </select>
-        <button type="submit" class="btn btn-primary">Access now</button>
+        <button type="submit" class="btn btn-primary">Get the guide</button>
       </form>
-
-      <div class="guide-success" id="guideSuccess">
-        <h3>Your guide is on the way</h3>
-        <p>Thanks for requesting our remodeling cost guide. We just sent the PDF to your inbox. If you do not see it within a few minutes, check your spam folder.</p>
-        <div class="hero-cta" style="margin-top:24px;">
-          <a href="/contact/" class="btn btn-primary">Schedule a consultation</a>
-          <a href="/assets/atlas-remodeling-cost-guide.pdf" class="btn btn-ghost" download>Download the guide</a>
-        </div>
-      </div>
     </div>
   </div>
 </section>
@@ -220,18 +216,6 @@
   </div>
 </footer>
 
-<script>
-  (function () {
-    var form = document.getElementById('guideForm');
-    var success = document.getElementById('guideSuccess');
-    if (form) form.addEventListener('submit', function (e) {
-      e.preventDefault();
-      form.style.display = 'none';
-      success.style.display = 'block';
-      success.scrollIntoView({ behavior: 'smooth', block: 'center' });
-    });
-  })();
-</script>
 
 <script>
   document.addEventListener('click', function (e) {
