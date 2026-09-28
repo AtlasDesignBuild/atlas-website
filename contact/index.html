@@ -118,6 +118,17 @@
 .contact-form-group input:focus,
 .contact-form-group select:focus,
 .contact-form-group textarea:focus { border-color: var(--ink); }
+.contact-form-group select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding-right: 48px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8' fill='none' stroke='%23111111' stroke-width='1.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M1 1.5l5 5 5-5'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 20px center;
+  background-size: 12px 8px;
+  cursor: pointer;
+}
 .contact-form-group textarea { resize: vertical; min-height: 120px; }
 .contact-form-row {
   display: grid;
