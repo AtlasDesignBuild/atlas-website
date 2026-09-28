@@ -3,6 +3,14 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9LYF9MTNHS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-9LYF9MTNHS');
+</script>
 <title>Thank you | Atlas D&amp;B</title>
 <meta name="robots" content="noindex" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -117,5 +125,20 @@
   </div>
 </footer>
 
+<script>
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest('a');
+    if (!a || typeof gtag !== 'function') return;
+    var href = a.getAttribute('href') || '';
+    if (href.indexOf('tel:') === 0) {
+      gtag('event', 'click_to_call', { link_url: href, page_path: location.pathname });
+    } else if (href.indexOf('mailto:') === 0) {
+      gtag('event', 'email_click', { link_url: href, page_path: location.pathname });
+    }
+  });
+</script>
+<script>
+  if (typeof gtag === 'function') gtag('event', 'generate_lead', { form_name: 'consultation' });
+</script>
 </body>
 </html>

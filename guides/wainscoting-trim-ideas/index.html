@@ -3,6 +3,14 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9LYF9MTNHS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-9LYF9MTNHS');
+</script>
 <title>Wainscoting and Trim Ideas for Older Homes | Atlas D&amp;B</title>
 <meta name="description" content="Wainscoting and trim ideas that fit the character of an older Bucks County home, from raised panel to board and batten." />
 <meta name="keywords" content="wainscoting ideas, trim ideas for older homes, board and batten ideas, wainscoting styles" />
@@ -371,5 +379,17 @@
   </div>
 </footer>
 
+<script>
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest('a');
+    if (!a || typeof gtag !== 'function') return;
+    var href = a.getAttribute('href') || '';
+    if (href.indexOf('tel:') === 0) {
+      gtag('event', 'click_to_call', { link_url: href, page_path: location.pathname });
+    } else if (href.indexOf('mailto:') === 0) {
+      gtag('event', 'email_click', { link_url: href, page_path: location.pathname });
+    }
+  });
+</script>
 </body>
 </html>

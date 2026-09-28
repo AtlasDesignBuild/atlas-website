@@ -3,6 +3,14 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9LYF9MTNHS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-9LYF9MTNHS');
+</script>
 <title>About Atlas D&amp;B | Bucks County, PA Design Build Firm</title>
 <meta name="description" content="Atlas Design &amp; Build is a husband and wife led design build firm renovating homes across Bucks County and Montgomery County, PA. Meet John and Rachel." />
 <link rel="canonical" href="https://atlasdesignandbuild.com/about/" />
@@ -262,5 +270,17 @@
   </div>
 </footer>
 
+<script>
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest('a');
+    if (!a || typeof gtag !== 'function') return;
+    var href = a.getAttribute('href') || '';
+    if (href.indexOf('tel:') === 0) {
+      gtag('event', 'click_to_call', { link_url: href, page_path: location.pathname });
+    } else if (href.indexOf('mailto:') === 0) {
+      gtag('event', 'email_click', { link_url: href, page_path: location.pathname });
+    }
+  });
+</script>
 </body>
 </html>

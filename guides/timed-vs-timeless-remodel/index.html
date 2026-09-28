@@ -3,6 +3,14 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9LYF9MTNHS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-9LYF9MTNHS');
+</script>
 <title>Timed vs. Timeless: What Holds Up in a Remodel | Atlas D&amp;B</title>
 <meta name="description" content="How to sort remodeling decisions into what should be built to last and what should reflect how you live, from Atlas D&amp;B in Bucks County, PA." />
 <meta name="keywords" content="timeless design, timed design, remodeling design philosophy, kitchen remodel design, bathroom remodel design, Bucks County remodeling" />
@@ -312,5 +320,17 @@
   </div>
 </footer>
 
+<script>
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest('a');
+    if (!a || typeof gtag !== 'function') return;
+    var href = a.getAttribute('href') || '';
+    if (href.indexOf('tel:') === 0) {
+      gtag('event', 'click_to_call', { link_url: href, page_path: location.pathname });
+    } else if (href.indexOf('mailto:') === 0) {
+      gtag('event', 'email_click', { link_url: href, page_path: location.pathname });
+    }
+  });
+</script>
 </body>
 </html>
