@@ -32,6 +32,7 @@ Replace with Atlas project photography when available.
 | `millwork-forks-township-hero.webp` | `xpAyMOubMqQ` | Franco Debartolo ([@francotheshooter](https://unsplash.com/@francotheshooter)) | /services/interior-millwork/forks-township/ |
 | `guide-kitchen-lehigh-valley.webp` | `pQVP5QmskxM` | GoodLifeConstruction ([@goodlifeconstruction](https://unsplash.com/@goodlifeconstruction)) | /guides/kitchen-remodel-cost-lehigh-valley/ |
 | `guide-spring-remodel-planning.webp` | `pdCTX1harH4` | Karolina Grabowska ([@kaboompics](https://unsplash.com/@kaboompics)) | /guides/when-to-start-planning-spring-remodel/ (sourced October 2026) |
+| `guide-farmhouse-kitchen.webp` | `QvIEolyJAIQ` | Clay Banks ([@claybanks](https://unsplash.com/@claybanks)) | /guides/farmhouse-kitchen-ideas-bucks-county/ (sourced October 2026) |
 
 ---
 
