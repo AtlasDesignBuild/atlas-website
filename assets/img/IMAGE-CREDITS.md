@@ -34,6 +34,7 @@ Replace with Atlas project photography when available.
 | `guide-spring-remodel-planning.webp` | `pdCTX1harH4` | Karolina Grabowska ([@kaboompics](https://unsplash.com/@kaboompics)) | /guides/when-to-start-planning-spring-remodel/ (sourced October 2026) |
 | `guide-farmhouse-kitchen.webp` | `QvIEolyJAIQ` | Clay Banks ([@claybanks](https://unsplash.com/@claybanks)) | /guides/farmhouse-kitchen-ideas-bucks-county/ (sourced October 2026) |
 | `guide-tile-flooring.webp` | `ToQ2iRm0_O0` | Chastity Cortijo ([@chastityco](https://unsplash.com/@chastityco)) | /guides/tile-flooring-cost-bucks-county/ (sourced October 2026) |
+| `guide-kitchen-budget-breakdown.webp` | `UqNEbyRQ660` | immo RENOVATION ([@immorenovation](https://unsplash.com/@immorenovation)) | /guides/kitchen-remodel-cost-calculator/ (sourced October 2026) |
 
 ---
 
