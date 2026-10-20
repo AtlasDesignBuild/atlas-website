@@ -4,7 +4,7 @@
   <!-- Homepage -->
   <url>
     <loc>https://atlasdesignandbuild.com/</loc>
-    <lastmod>2026-06-20</lastmod>
+    <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -12,7 +12,7 @@
   <!-- Contact -->
   <url>
     <loc>https://atlasdesignandbuild.com/contact/</loc>
-    <lastmod>2026-09-26</lastmod>
+    <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -20,63 +20,69 @@
   <!-- About -->
   <url>
     <loc>https://atlasdesignandbuild.com/about/</loc>
-    <lastmod>2026-06-20</lastmod>
+    <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://atlasdesignandbuild.com/lehigh-valley/</loc>
+    <lastmod>2026-10-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
 
   <!-- Kitchen service pages -->
   <url>
     <loc>https://atlasdesignandbuild.com/services/kitchen/</loc>
-    <lastmod>2026-06-20</lastmod>
+    <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://atlasdesignandbuild.com/services/kitchen/doylestown/</loc>
-    <lastmod>2026-06-20</lastmod>
+    <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://atlasdesignandbuild.com/services/kitchen/yardley/</loc>
-    <lastmod>2026-06-20</lastmod>
+    <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://atlasdesignandbuild.com/services/kitchen/newtown/</loc>
-    <lastmod>2026-06-20</lastmod>
+    <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://atlasdesignandbuild.com/services/kitchen/langhorne/</loc>
-    <lastmod>2026-06-20</lastmod>
+    <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://atlasdesignandbuild.com/services/kitchen/warrington/</loc>
-    <lastmod>2026-06-20</lastmod>
+    <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://atlasdesignandbuild.com/services/kitchen/chalfont/</loc>
-    <lastmod>2026-06-20</lastmod>
+    <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://atlasdesignandbuild.com/services/kitchen/new-hope/</loc>
-    <lastmod>2026-06-20</lastmod>
+    <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://atlasdesignandbuild.com/services/kitchen/montgomery-county/</loc>
-    <lastmod>2026-06-20</lastmod>
+    <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -84,55 +90,55 @@
   <!-- Bathroom service pages -->
   <url>
     <loc>https://atlasdesignandbuild.com/services/bathroom/</loc>
-    <lastmod>2026-06-20</lastmod>
+    <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://atlasdesignandbuild.com/services/bathroom/doylestown/</loc>
-    <lastmod>2026-06-20</lastmod>
+    <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://atlasdesignandbuild.com/services/bathroom/yardley/</loc>
-    <lastmod>2026-06-20</lastmod>
+    <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://atlasdesignandbuild.com/services/bathroom/newtown/</loc>
-    <lastmod>2026-06-20</lastmod>
+    <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://atlasdesignandbuild.com/services/bathroom/langhorne/</loc>
-    <lastmod>2026-06-20</lastmod>
+    <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://atlasdesignandbuild.com/services/bathroom/warrington/</loc>
-    <lastmod>2026-06-20</lastmod>
+    <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://atlasdesignandbuild.com/services/bathroom/chalfont/</loc>
-    <lastmod>2026-06-20</lastmod>
+    <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://atlasdesignandbuild.com/services/bathroom/new-hope/</loc>
-    <lastmod>2026-06-20</lastmod>
+    <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://atlasdesignandbuild.com/services/bathroom/montgomery-county/</loc>
-    <lastmod>2026-06-20</lastmod>
+    <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -140,115 +146,115 @@
   <!-- Basement service pages -->
   <url>
     <loc>https://atlasdesignandbuild.com/services/basement/</loc>
-    <lastmod>2026-07-08</lastmod>
+    <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://atlasdesignandbuild.com/services/basement/doylestown/</loc>
-    <lastmod>2026-07-08</lastmod>
+    <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://atlasdesignandbuild.com/services/basement/newtown/</loc>
-    <lastmod>2026-07-08</lastmod>
+    <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://atlasdesignandbuild.com/services/basement/yardley/</loc>
-    <lastmod>2026-07-08</lastmod>
+    <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://atlasdesignandbuild.com/services/basement/langhorne/</loc>
-    <lastmod>2026-07-08</lastmod>
+    <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://atlasdesignandbuild.com/services/basement/warrington/</loc>
-    <lastmod>2026-07-08</lastmod>
+    <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://atlasdesignandbuild.com/services/basement/chalfont/</loc>
-    <lastmod>2026-07-08</lastmod>
+    <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://atlasdesignandbuild.com/services/basement/new-hope/</loc>
-    <lastmod>2026-07-08</lastmod>
+    <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://atlasdesignandbuild.com/services/whole-home-renovation/</loc>
-    <lastmod>2026-06-20</lastmod>
+    <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://atlasdesignandbuild.com/services/interior-millwork/</loc>
-    <lastmod>2026-07-14</lastmod>
+    <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://atlasdesignandbuild.com/services/tile-installation/</loc>
-    <lastmod>2026-08-12</lastmod>
+    <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://atlasdesignandbuild.com/services/tile-installation/doylestown/</loc>
-    <lastmod>2026-08-12</lastmod>
+    <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://atlasdesignandbuild.com/services/tile-installation/newtown/</loc>
-    <lastmod>2026-08-12</lastmod>
+    <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://atlasdesignandbuild.com/services/tile-installation/yardley/</loc>
-    <lastmod>2026-08-12</lastmod>
+    <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://atlasdesignandbuild.com/services/tile-installation/langhorne/</loc>
-    <lastmod>2026-08-12</lastmod>
+    <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://atlasdesignandbuild.com/services/tile-installation/warrington/</loc>
-    <lastmod>2026-08-12</lastmod>
+    <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://atlasdesignandbuild.com/services/tile-installation/chalfont/</loc>
-    <lastmod>2026-08-12</lastmod>
+    <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://atlasdesignandbuild.com/services/tile-installation/new-hope/</loc>
-    <lastmod>2026-08-12</lastmod>
+    <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://atlasdesignandbuild.com/services/tile-installation/montgomery-county/</loc>
-    <lastmod>2026-08-12</lastmod>
+    <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -256,37 +262,37 @@
   <!--  Easton service pages  -->
   <url>
     <loc>https://atlasdesignandbuild.com/services/kitchen/easton/</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://atlasdesignandbuild.com/services/bathroom/easton/</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://atlasdesignandbuild.com/services/basement/easton/</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://atlasdesignandbuild.com/services/whole-home-renovation/easton/</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://atlasdesignandbuild.com/services/tile-installation/easton/</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://atlasdesignandbuild.com/services/interior-millwork/easton/</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -294,7 +300,7 @@
   <!--  Forks Township service pages  -->
   <url>
     <loc>https://atlasdesignandbuild.com/services/kitchen/forks-township/</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -306,7 +312,7 @@
   </url>
   <url>
     <loc>https://atlasdesignandbuild.com/services/bathroom/forks-township/</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -318,7 +324,7 @@
   </url>
   <url>
     <loc>https://atlasdesignandbuild.com/services/basement/forks-township/</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -330,7 +336,7 @@
   </url>
   <url>
     <loc>https://atlasdesignandbuild.com/services/whole-home-renovation/forks-township/</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -342,7 +348,7 @@
   </url>
   <url>
     <loc>https://atlasdesignandbuild.com/services/tile-installation/forks-township/</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -354,7 +360,7 @@
   </url>
   <url>
     <loc>https://atlasdesignandbuild.com/services/interior-millwork/forks-township/</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -368,7 +374,7 @@
   <!-- Guides index -->
   <url>
     <loc>https://atlasdesignandbuild.com/guides/</loc>
-    <lastmod>2026-10-19</lastmod>
+    <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -376,49 +382,49 @@
   <!-- Original 8 guides -->
   <url>
     <loc>https://atlasdesignandbuild.com/guides/kitchen-remodel-cost-bucks-county/</loc>
-    <lastmod>2026-02-03</lastmod>
+    <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://atlasdesignandbuild.com/guides/bathroom-remodel-cost-bucks-county/</loc>
-    <lastmod>2026-02-11</lastmod>
+    <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://atlasdesignandbuild.com/guides/basement-finishing-cost-bucks-county/</loc>
-    <lastmod>2026-02-19</lastmod>
+    <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://atlasdesignandbuild.com/guides/home-addition-cost-bucks-county/</loc>
-    <lastmod>2026-02-26</lastmod>
+    <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://atlasdesignandbuild.com/guides/basement-finishing-cost-calculator/</loc>
-    <lastmod>2026-03-05</lastmod>
+    <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://atlasdesignandbuild.com/guides/low-cost-kitchen-remodel/</loc>
-    <lastmod>2026-03-12</lastmod>
+    <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://atlasdesignandbuild.com/guides/small-bathroom-remodel-ideas/</loc>
-    <lastmod>2026-03-20</lastmod>
+    <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://atlasdesignandbuild.com/guides/10x10-kitchen-remodel-cost/</loc>
-    <lastmod>2026-03-31</lastmod>
+    <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -426,49 +432,49 @@
   <!-- New 8 guides -->
   <url>
     <loc>https://atlasdesignandbuild.com/guides/how-long-does-a-kitchen-remodel-take/</loc>
-    <lastmod>2026-04-08</lastmod>
+    <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://atlasdesignandbuild.com/guides/whole-home-renovation-cost-bucks-county/</loc>
-    <lastmod>2026-04-17</lastmod>
+    <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://atlasdesignandbuild.com/guides/how-to-choose-a-contractor-bucks-county/</loc>
-    <lastmod>2026-04-25</lastmod>
+    <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://atlasdesignandbuild.com/guides/doylestown-kitchen-remodel-cost/</loc>
-    <lastmod>2026-05-06</lastmod>
+    <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://atlasdesignandbuild.com/guides/newtown-bathroom-remodel-cost/</loc>
-    <lastmod>2026-05-14</lastmod>
+    <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://atlasdesignandbuild.com/guides/home-addition-cost-per-square-foot-pa/</loc>
-    <lastmod>2026-05-22</lastmod>
+    <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://atlasdesignandbuild.com/guides/kitchen-remodel-roi-home-value/</loc>
-    <lastmod>2026-06-04</lastmod>
+    <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://atlasdesignandbuild.com/guides/permits-home-remodeling-bucks-county/</loc>
-    <lastmod>2026-06-10</lastmod>
+    <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -480,43 +486,43 @@
   </url>
   <url>
     <loc>https://atlasdesignandbuild.com/guides/small-bathroom-ideas-beyond-basic/</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://atlasdesignandbuild.com/guides/wainscoting-trim-ideas/</loc>
-    <lastmod>2026-09-16</lastmod>
+    <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://atlasdesignandbuild.com/guides/kitchen-remodel-cost-lehigh-valley/</loc>
-    <lastmod>2026-09-26</lastmod>
+    <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://atlasdesignandbuild.com/guides/when-to-start-planning-spring-remodel/</loc>
-    <lastmod>2026-09-28</lastmod>
+    <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://atlasdesignandbuild.com/guides/farmhouse-kitchen-ideas-bucks-county/</loc>
-    <lastmod>2026-10-05</lastmod>
+    <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://atlasdesignandbuild.com/guides/tile-flooring-cost-bucks-county/</loc>
-    <lastmod>2026-10-12</lastmod>
+    <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://atlasdesignandbuild.com/guides/kitchen-remodel-cost-calculator/</loc>
-    <lastmod>2026-10-19</lastmod>
+    <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -540,13 +546,13 @@
   </url>
   <url>
     <loc>https://atlasdesignandbuild.com/guides/bathroom-remodel-ideas/</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://atlasdesignandbuild.com/guides/bathroom-tile-ideas/</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -558,25 +564,25 @@
   </url>
   <url>
     <loc>https://atlasdesignandbuild.com/guides/kitchen-backsplash-tile-ideas/</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://atlasdesignandbuild.com/guides/kitchen-design-ideas/</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://atlasdesignandbuild.com/guides/small-kitchen-ideas/</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://atlasdesignandbuild.com/guides/timed-vs-timeless-remodel/</loc>
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -584,7 +590,7 @@
   <!-- Reviews -->
   <url>
     <loc>https://atlasdesignandbuild.com/reviews/</loc>
-    <lastmod>2026-07-08</lastmod>
+    <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -592,7 +598,7 @@
   <!-- Supporting pages -->
   <url>
     <loc>https://atlasdesignandbuild.com/remodeling-cost-guide/</loc>
-    <lastmod>2026-06-20</lastmod>
+    <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
