@@ -45,6 +45,10 @@
     {
       "@type": "Place",
       "name": "Williams Township, PA"
+    },
+    {
+      "@type": "Place",
+      "name": "Bethlehem Township, PA"
     }
   ],
   "aggregateRating": {
@@ -84,7 +88,7 @@
       "name": "Which Lehigh Valley towns do you work in?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "We work regularly in Easton, Forks Township, Palmer Township and Williams Township, and in other nearby towns. If you are not sure whether your home is within our service area, call us and we will tell you."
+        "text": "We work regularly in Easton, Forks Township, Palmer Township, Williams Township and Bethlehem Township, and in other nearby towns. If you are not sure whether your home is within our service area, call us and we will tell you."
       }
     },
     {
@@ -123,6 +127,17 @@
 <meta property="og:image" content="https://atlasdesignandbuild.com/assets/img/kitchen-hero.jpg" />
 <meta name="twitter:card" content="summary_large_image" />
 <link rel="preload" as="image" href="/assets/img/kitchen-hero.jpg">
+<style>
+  /* Town cards: three per row, with a short last row centered */
+  .towns-grid { grid-template-columns: repeat(6, 1fr); }
+  .towns-grid > .service-card { grid-column: span 2; }
+  .towns-grid > .service-card:nth-child(3n+1):nth-last-child(2) { grid-column: 2 / span 2; }
+  .towns-grid > .service-card:nth-child(3n+1):last-child { grid-column: 3 / span 2; }
+  @media (max-width: 760px) {
+    .towns-grid { grid-template-columns: 1fr; }
+    .towns-grid > .service-card { grid-column: auto !important; }
+  }
+</style>
 </head>
 <body>
 
@@ -199,7 +214,7 @@
       <p class="eyebrow">Where we work</p>
       <h2>Towns we serve in the Lehigh Valley</h2>
     </div>
-    <div class="services-grid" style="grid-template-columns:repeat(3,1fr);">
+    <div class="services-grid towns-grid">
       <article class="service-card">
         <div class="service-card-body">
           <h3>Easton</h3>
@@ -242,8 +257,36 @@
           </ul>
         </div>
       </article>
+      <article class="service-card">
+        <div class="service-card-body">
+          <h3>Williams Township</h3>
+          <p>South of Easton, Williams Township is largely rural, with farmhouses that have grown over generations and custom homes on larger lots. Projects here often involve well water, septic systems and joining old construction with new.</p>
+          <ul>
+            <li><a href="/services/kitchen/williams-township/">Kitchen</a></li>
+            <li><a href="/services/bathroom/williams-township/">Bathroom</a></li>
+            <li><a href="/services/basement/williams-township/">Basement</a></li>
+            <li><a href="/services/whole-home-renovation/williams-township/">Whole home</a></li>
+            <li><a href="/services/tile-installation/williams-township/">Tile</a></li>
+            <li><a href="/services/interior-millwork/williams-township/">Interior millwork</a></li>
+          </ul>
+        </div>
+      </article>
+      <article class="service-card">
+        <div class="service-card-body">
+          <h3>Bethlehem Township</h3>
+          <p>Between Bethlehem and Easton, Bethlehem Township spans postwar homes, 1960s and 1970s split-levels and newer colonials. Projects here often focus on opening split-level layouts and finishing builder-grade homes.</p>
+          <ul>
+            <li><a href="/services/kitchen/bethlehem-township/">Kitchen</a></li>
+            <li><a href="/services/bathroom/bethlehem-township/">Bathroom</a></li>
+            <li><a href="/services/basement/bethlehem-township/">Basement</a></li>
+            <li><a href="/services/whole-home-renovation/bethlehem-township/">Whole home</a></li>
+            <li><a href="/services/tile-installation/bethlehem-township/">Tile</a></li>
+            <li><a href="/services/interior-millwork/bethlehem-township/">Interior millwork</a></li>
+          </ul>
+        </div>
+      </article>
     </div>
-    <p class="lede" style="margin-top:36px;">We also work in Williams Township and other nearby Lehigh Valley towns. <a href="tel:+14845419818">Call us</a> to confirm your address is within our service area.</p>
+    <p class="lede" style="margin-top:36px;">We also work in other nearby Lehigh Valley towns. <a href="tel:+14845419818">Call us</a> to confirm your address is within our service area.</p>
   </div>
 </section>
 
@@ -317,7 +360,7 @@
   <div class="container faq-grid">
     <div><p class="eyebrow">Questions</p><h2>Frequently asked questions</h2></div>
     <div class="faq-list">
-      <div class="faq-item"><h3>Which Lehigh Valley towns do you work in?</h3><p>We work regularly in Easton, Forks Township, Palmer Township and Williams Township, and in other nearby towns. If you are not sure whether your home is within our service area, call us and we will tell you.</p></div>
+      <div class="faq-item"><h3>Which Lehigh Valley towns do you work in?</h3><p>We work regularly in Easton, Forks Township, Palmer Township, Williams Township and Bethlehem Township, and in other nearby towns. If you are not sure whether your home is within our service area, call us and we will tell you.</p></div>
       <div class="faq-item"><h3>Do you handle permits in the City of Easton and the surrounding townships?</h3><p>Yes. The City of Easton and each township run their own permit process, and exterior work in Easton&#x27;s historic districts can require additional review. We prepare the drawings, file the applications and schedule inspections.</p></div>
       <div class="faq-item"><h3>Do you work on older homes?</h3><p>Yes. Much of our Lehigh Valley work is in homes built before 1950. We assess plumbing, electrical, framing and moisture before design is finalized so the budget reflects the house as it is.</p></div>
       <div class="faq-item"><h3>Do you still work in Bucks County and Montgomery County?</h3><p>Yes. We continue to work across Bucks County and Montgomery County alongside our projects in the Lehigh Valley.</p></div>
@@ -372,7 +415,7 @@
         <ul>
           <li><a href="tel:+14845419818">(484) 541-9818</a></li>
           <li><a href="/contact/">Schedule a consultation</a></li>
-          <li><a href="/services/kitchen/doylestown/">Doylestown</a>, <a href="/services/kitchen/newtown/">Newtown</a>, <a href="/services/kitchen/yardley/">Yardley</a>,<br /><a href="/services/kitchen/langhorne/">Langhorne</a>, <a href="/services/kitchen/warrington/">Warrington</a>, <a href="/services/kitchen/chalfont/">Chalfont</a>, <a href="/services/kitchen/new-hope/">New Hope</a>, <a href="/lehigh-valley/">Lehigh Valley</a>, <a href="/services/kitchen/easton/">Easton</a>, <a href="/services/kitchen/forks-township/">Forks Township</a>, <a href="/services/kitchen/palmer-township/">Palmer Township</a></li>
+          <li><a href="/services/kitchen/doylestown/">Doylestown</a>, <a href="/services/kitchen/newtown/">Newtown</a>, <a href="/services/kitchen/yardley/">Yardley</a>,<br /><a href="/services/kitchen/langhorne/">Langhorne</a>, <a href="/services/kitchen/warrington/">Warrington</a>, <a href="/services/kitchen/chalfont/">Chalfont</a>, <a href="/services/kitchen/new-hope/">New Hope</a>, <a href="/lehigh-valley/">Lehigh Valley</a>, <a href="/services/kitchen/easton/">Easton</a>, <a href="/services/kitchen/forks-township/">Forks Township</a>, <a href="/services/kitchen/palmer-township/">Palmer Township</a>, <a href="/services/kitchen/williams-township/">Williams Township</a>, <a href="/services/kitchen/bethlehem-township/">Bethlehem Township</a></li>
         </ul>
       </div>
     </div>
