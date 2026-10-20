@@ -46,25 +46,83 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "HomeAndConstructionBusiness",
+  "@type": [
+    "HomeAndConstructionBusiness",
+    "GeneralContractor"
+  ],
+  "@id": "https://atlasdesignandbuild.com/#business",
   "name": "Atlas Design & Build",
   "url": "https://atlasdesignandbuild.com/",
-  "telephone": "+14845419818",
+  "telephone": "+1-484-541-9818",
+  "email": "info@atlasdesignandbuild.com",
   "image": "https://atlasdesignandbuild.com/assets/img/hero.jpg",
-  "description": "Premium home remodeling company serving Bucks County and the surrounding Philadelphia suburbs. Kitchen and bath renovations, flooring, additions, and painting.",
+  "description": "Atlas Design & Build is a husband and wife led design build firm serving Bucks County, Montgomery County and the Lehigh Valley. We design and build custom kitchens, bathrooms, basements and whole home renovations, along with tile work and interior millwork. With more than 20 years of construction experience and a background in interior design, we manage every project directly, from the first walkthrough to the final one.",
   "address": {
     "@type": "PostalAddress",
     "addressRegion": "PA",
     "addressCountry": "US"
   },
   "areaServed": [
-    "Bucks County",
-    "Montgomery County",
-    "Lehigh Valley",
-    "Easton",
-    "Forks Township",
-    "Palmer Township",
-    "Williams Township"
+    {
+      "@type": "AdministrativeArea",
+      "name": "Bucks County, PA"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "Montgomery County, PA"
+    },
+    {
+      "@type": "Place",
+      "name": "Lehigh Valley, PA"
+    },
+    {
+      "@type": "Place",
+      "name": "Doylestown, PA"
+    },
+    {
+      "@type": "Place",
+      "name": "Newtown, PA"
+    },
+    {
+      "@type": "Place",
+      "name": "Yardley, PA"
+    },
+    {
+      "@type": "Place",
+      "name": "Langhorne, PA"
+    },
+    {
+      "@type": "Place",
+      "name": "Warrington, PA"
+    },
+    {
+      "@type": "Place",
+      "name": "Chalfont, PA"
+    },
+    {
+      "@type": "Place",
+      "name": "New Hope, PA"
+    },
+    {
+      "@type": "Place",
+      "name": "Easton, PA"
+    },
+    {
+      "@type": "Place",
+      "name": "Forks Township, PA"
+    },
+    {
+      "@type": "Place",
+      "name": "Palmer Township, PA"
+    },
+    {
+      "@type": "Place",
+      "name": "Williams Township, PA"
+    },
+    {
+      "@type": "Place",
+      "name": "Bethlehem Township, PA"
+    }
   ],
   "priceRange": "$$$",
   "slogan": "Built to last. Designed to impress.",
@@ -72,11 +130,19 @@
     "Kitchen remodeling",
     "Bathroom remodeling",
     "Basement finishing",
-    "Whole home renovation"
+    "Whole home renovation",
+    "Tile installation",
+    "Interior millwork"
   ],
   "founder": [
-    {"@type": "Person", "name": "John"},
-    {"@type": "Person", "name": "Rachel"}
+    {
+      "@type": "Person",
+      "name": "John"
+    },
+    {
+      "@type": "Person",
+      "name": "Rachel"
+    }
   ],
   "aggregateRating": {
     "@type": "AggregateRating",

@@ -27,28 +27,87 @@
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
         <noscript><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" /></noscript>
 <link rel="stylesheet" href="/assets/style.css?v=10" />
+<!-- TODO Rachel: add profile URLs to sameAs (GBP, Thumbtack, Houzz, Facebook, Yelp, etc.) -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "HomeAndConstructionBusiness",
+  "@type": [
+    "HomeAndConstructionBusiness",
+    "GeneralContractor"
+  ],
+  "@id": "https://atlasdesignandbuild.com/#business",
   "name": "Atlas Design & Build",
   "url": "https://atlasdesignandbuild.com/",
-  "telephone": "+14845419818",
+  "telephone": "+1-484-541-9818",
+  "email": "info@atlasdesignandbuild.com",
   "image": "https://atlasdesignandbuild.com/assets/img/hero.jpg",
-  "description": "Premium home remodeling company serving Bucks County and the surrounding Philadelphia suburbs. Kitchen and bath renovations, flooring, additions, and painting.",
+  "description": "Atlas Design & Build is a husband and wife led design build firm serving Bucks County, Montgomery County and the Lehigh Valley. We design and build custom kitchens, bathrooms, basements and whole home renovations, along with tile work and interior millwork. With more than 20 years of construction experience and a background in interior design, we manage every project directly, from the first walkthrough to the final one.",
   "address": {
     "@type": "PostalAddress",
     "addressRegion": "PA",
     "addressCountry": "US"
   },
   "areaServed": [
-    "Bucks County",
-    "Montgomery County",
-    "Lehigh Valley",
-    "Easton",
-    "Forks Township",
-    "Palmer Township",
-    "Williams Township"
+    {
+      "@type": "AdministrativeArea",
+      "name": "Bucks County, PA"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "Montgomery County, PA"
+    },
+    {
+      "@type": "Place",
+      "name": "Lehigh Valley, PA"
+    },
+    {
+      "@type": "Place",
+      "name": "Doylestown, PA"
+    },
+    {
+      "@type": "Place",
+      "name": "Newtown, PA"
+    },
+    {
+      "@type": "Place",
+      "name": "Yardley, PA"
+    },
+    {
+      "@type": "Place",
+      "name": "Langhorne, PA"
+    },
+    {
+      "@type": "Place",
+      "name": "Warrington, PA"
+    },
+    {
+      "@type": "Place",
+      "name": "Chalfont, PA"
+    },
+    {
+      "@type": "Place",
+      "name": "New Hope, PA"
+    },
+    {
+      "@type": "Place",
+      "name": "Easton, PA"
+    },
+    {
+      "@type": "Place",
+      "name": "Forks Township, PA"
+    },
+    {
+      "@type": "Place",
+      "name": "Palmer Township, PA"
+    },
+    {
+      "@type": "Place",
+      "name": "Williams Township, PA"
+    },
+    {
+      "@type": "Place",
+      "name": "Bethlehem Township, PA"
+    }
   ],
   "priceRange": "$$$",
   "slogan": "Built to last. Designed to impress.",
@@ -56,7 +115,9 @@
     "Kitchen remodeling",
     "Bathroom remodeling",
     "Basement finishing",
-    "Whole home renovation"
+    "Whole home renovation",
+    "Tile installation",
+    "Interior millwork"
   ],
   "founder": [
     {
@@ -72,7 +133,8 @@
     "@type": "AggregateRating",
     "ratingValue": "5.0",
     "reviewCount": "14"
-  }
+  },
+  "sameAs": []
 }
 </script>
 <script type="application/ld+json">
@@ -165,7 +227,7 @@
   <div class="container">
     <p class="hero-tagline">Built to last. Designed to impress.</p>
     <h1>Custom remodeling in Bucks County, PA</h1>
-    <p class="hero-sub lede">Atlas Design &amp; Build is a husband and wife led design build firm serving Bucks County, Montgomery County and the <a href="/lehigh-valley/">Lehigh Valley</a>. We specialize in custom kitchen, bathroom, basement and whole home renovations for homeowners who want elevated design, quality craftsmanship and a renovation experience that feels clear, organized and intentional from start to finish.</p>
+    <p class="hero-sub lede">Atlas Design &amp; Build is a husband and wife led design build firm serving Bucks County, Montgomery County and the <a href="/lehigh-valley/">Lehigh Valley</a>. We design and build custom kitchens, bathrooms, basements and whole home renovations, along with tile work and interior millwork. With more than 20 years of construction experience and a background in interior design, we manage every project directly, from the first walkthrough to the final one.</p>
     <div class="hero-cta">
       <a href="/contact/" class="btn btn-primary">Schedule a consultation</a>
       <a href="tel:+14845419818" class="btn btn-ghost">Call (484) 541-9818</a>
