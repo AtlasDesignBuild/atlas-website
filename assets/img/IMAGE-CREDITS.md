@@ -35,6 +35,9 @@ Replace with Atlas project photography when available.
 | `guide-farmhouse-kitchen.webp` | `QvIEolyJAIQ` | Clay Banks ([@claybanks](https://unsplash.com/@claybanks)) | /guides/farmhouse-kitchen-ideas-bucks-county/ (sourced October 2026) |
 | `guide-tile-flooring.webp` | `ToQ2iRm0_O0` | Chastity Cortijo ([@chastityco](https://unsplash.com/@chastityco)) | /guides/tile-flooring-cost-bucks-county/ (sourced October 2026) |
 | `guide-kitchen-cost-calculator.webp` | `z3QZ6gjGRt4` | roam in color ([@roamincolor](https://unsplash.com/@roamincolor)) | /guides/kitchen-remodel-cost-calculator/ (sourced October 2026) |
+| `guide-bathroom-lehigh-valley.webp` | `p9A8tpM93Hk` | GoodLifeConstruction ([@goodlifeconstruction](https://unsplash.com/@goodlifeconstruction)) | /guides/bathroom-remodel-cost-lehigh-valley/ (sourced October 2026) |
+| `guide-basement-lehigh-valley.webp` | `FtoTc6zKx2c` | Clay Banks ([@claybanks](https://unsplash.com/@claybanks)) | /guides/basement-finishing-cost-lehigh-valley/ (sourced October 2026) |
+| `guide-addition-lehigh-valley.webp` | `kkdfOe0iRu8` | Troy Mortier ([@troyscanon](https://unsplash.com/@troyscanon)) | /guides/home-addition-cost-lehigh-valley/ (sourced October 2026) |
 
 ---
 
