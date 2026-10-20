@@ -1,15 +1,27 @@
 Options -Indexes
 RewriteEngine On
 
-# 301 redirects: legacy -remodeling / -finishing URLs → canonical pages
-Redirect 301 /services/basement-remodeling/ /services/basement/
-Redirect 301 /services/bathroom-remodeling/ /services/bathroom/
-Redirect 301 /services/kitchen-remodeling/  /services/kitchen/
+# 301 redirects: legacy URLs → canonical pages. These run before the www/https
+# rules and redirect straight to the https non-www URL, so every legacy URL
+# (www or not, http or https) resolves in a single hop.
 
-# 301 redirects: old Wix URLs → current pages
-RedirectMatch 301 ^/kitchen/?$ /services/kitchen/
-RedirectMatch 301 ^/bathrooms/?$ /services/bathroom/
-RedirectMatch 301 ^/contact-8/?$ /contact/
-RedirectMatch 301 ^/inquiries/?$ /contact/
-RedirectMatch 301 ^/home/?$ /
-RedirectMatch 301 ^/whole-home-additions-1/?$ /services/whole-home-renovation/
+# Legacy -remodeling URLs (with or without trailing slash; subpaths carried over)
+RewriteRule ^services/basement-remodeling(?:/(.*))?$ https://atlasdesignandbuild.com/services/basement/$1 [R=301,L]
+RewriteRule ^services/bathroom-remodeling(?:/(.*))?$ https://atlasdesignandbuild.com/services/bathroom/$1 [R=301,L]
+RewriteRule ^services/kitchen-remodeling(?:/(.*))?$ https://atlasdesignandbuild.com/services/kitchen/$1 [R=301,L]
+
+# Old Wix URLs
+RewriteRule ^kitchen/?$ https://atlasdesignandbuild.com/services/kitchen/ [R=301,L]
+RewriteRule ^bathrooms/?$ https://atlasdesignandbuild.com/services/bathroom/ [R=301,L]
+RewriteRule ^basements/?$ https://atlasdesignandbuild.com/services/basement/ [R=301,L]
+RewriteRule ^contact-8/?$ https://atlasdesignandbuild.com/contact/ [R=301,L]
+RewriteRule ^inquiries/?$ https://atlasdesignandbuild.com/contact/ [R=301,L]
+RewriteRule ^home/?$ https://atlasdesignandbuild.com/ [R=301,L]
+RewriteRule ^whole-home-additions-1/?$ https://atlasdesignandbuild.com/services/whole-home-renovation/ [R=301,L]
+
+# 301 redirects: www → non-www, http → https
+RewriteCond %{HTTP_HOST} ^www\.atlasdesignandbuild\.com$ [NC]
+RewriteRule ^ https://atlasdesignandbuild.com%{REQUEST_URI} [R=301,L]
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP:X-Forwarded-Proto} !https
+RewriteRule ^ https://atlasdesignandbuild.com%{REQUEST_URI} [R=301,L]
