@@ -179,7 +179,8 @@
         </select>
         <div data-source-field="referral" data-display="flex" style="display:none; flex-direction:column; gap:12px;">
           <label class="field-label" for="cg_referred_by">Who referred you?</label>
-          <input type="text" id="cg_referred_by" name="referred_by" placeholder="Name (and company, if a realtor or designer)" disabled />
+          <p id="cg_referred_by_help" style="font-family:var(--sans); font-size:13px; color:var(--ink-soft); margin:-6px 0 -4px;">So we can thank them personally.</p>
+          <input type="text" id="cg_referred_by" name="referred_by" placeholder="Name (and company, if a realtor or designer)" aria-describedby="cg_referred_by_help" disabled />
         </div>
         <div data-source-field="other" data-display="flex" style="display:none; flex-direction:column; gap:12px;">
           <label class="field-label" for="cg_source_other">Please tell us where</label>

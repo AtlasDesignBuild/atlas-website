@@ -413,7 +413,8 @@
               </select>
               <div class="contact-form-group" data-source-field="referral" data-display="block" style="display:none; margin:22px 0 0;">
                 <label for="referred_by">Who referred you?</label>
-                <input type="text" id="referred_by" name="referred_by" placeholder="Name (and company, if a realtor or designer)" disabled />
+                <p class="form-note" id="referred_by_help" style="margin:-2px 0 8px;">So we can thank them personally.</p>
+                <input type="text" id="referred_by" name="referred_by" placeholder="Name (and company, if a realtor or designer)" aria-describedby="referred_by_help" disabled />
               </div>
               <div class="contact-form-group" data-source-field="other" data-display="block" style="display:none; margin:22px 0 0;">
                 <label for="source_other">Please tell us where</label>
