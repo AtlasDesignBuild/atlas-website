@@ -26,6 +26,8 @@
   .guide-form input, .guide-form select { padding: 14px 16px; border-radius: 2px; border: 1px solid var(--line); background: var(--paper-card); color: var(--ink); font-family: var(--sans); font-size: 15px; width: 100%; }
   .guide-form label.field-label { font-family: var(--sans); font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--ink-faint); margin-bottom: -4px; }
   .guide-form .btn { justify-content: center; margin-top: 6px; }
+  .guide-form .form-note { font-family: var(--sans); font-size: 13px; color: var(--ink-soft); margin: 0; }
+  .guide-form .req { color: #9A7B4F; margin-left: 3px; }
   .guide-success { display: none; background: var(--paper-card); border: 1px solid var(--line); border-radius: 3px; padding: 36px 34px; margin-top: 28px; }
   .guide-success h3 { font-size: 26px; margin-bottom: 12px; }
   .guide-list { list-style: none; margin: 26px 0 0; padding: 0; display: flex; flex-direction: column; gap: 16px; }
@@ -147,17 +149,18 @@
         <input type="hidden" name="from_name" value="Atlas website - cost guide">
         <input type="hidden" name="redirect" value="https://atlasdesignandbuild.com/remodeling-cost-guide-thank-you/">
         <input type="checkbox" name="botcheck" class="hidden" style="display: none;" tabindex="-1" autocomplete="off">
+        <p class="form-note"><span class="req" aria-hidden="true">*</span> Required</p>
         <label class="field-label">Tell us a little about your project</label>
         <div class="row">
-          <input type="text" name="first_name" placeholder="First name" required aria-label="First name" />
-          <input type="text" name="last_name" placeholder="Last name" required aria-label="Last name" />
+          <input type="text" name="first_name" placeholder="First name *" required aria-label="First name" />
+          <input type="text" name="last_name" placeholder="Last name *" required aria-label="Last name" />
         </div>
         <div class="row">
-          <input type="email" name="email" placeholder="Email" required aria-label="Email" />
-          <input type="tel" name="phone" placeholder="Phone number" required aria-label="Phone number" />
+          <input type="email" name="email" placeholder="Email *" required aria-label="Email" />
+          <input type="tel" name="phone" placeholder="Phone number *" required aria-label="Phone number" />
         </div>
         <select name="project_type" required aria-label="Project type">
-          <option value="" disabled selected>What project type are you interested in?</option>
+          <option value="" disabled selected>What project type are you interested in? *</option>
           <option>Kitchen</option>
           <option>Bathroom</option>
           <option>Basement</option>
