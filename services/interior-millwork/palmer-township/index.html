@@ -112,7 +112,8 @@
   "aggregateRating": {
     "@type": "AggregateRating",
     "ratingValue": "5.0",
-    "reviewCount": "14"
+    "ratingCount": "18",
+    "reviewCount": "17"
   },
   "knowsAbout": [
     "Kitchen remodeling",
@@ -165,6 +166,17 @@
 <meta property="og:image" content="https://atlasdesignandbuild.com/assets/img/millwork-palmer-township-hero.webp" />
 <meta name="twitter:card" content="summary_large_image" />
 <link rel="preload" as="image" href="/assets/img/millwork-palmer-township-hero.webp">
+<style>
+  /* Review cards: three per row, with a short last row centered */
+  .reviews-grid { grid-template-columns: repeat(6, 1fr); }
+  .reviews-grid > .review { grid-column: span 2; }
+  .reviews-grid > .review:nth-child(3n+1):nth-last-child(2) { grid-column: 2 / span 2; }
+  .reviews-grid > .review:nth-child(3n+1):last-child { grid-column: 3 / span 2; }
+  @media (max-width: 920px) {
+    .reviews-grid { grid-template-columns: 1fr; }
+    .reviews-grid > .review { grid-column: auto !important; }
+  }
+</style>
 </head>
 <body>
 
@@ -343,6 +355,7 @@
   <div class="container">
     <div class="section-head"><p class="eyebrow">Client experience</p><h2>What our clients say</h2></div>
     <div class="reviews-grid">
+      <div class="review"><div class="review-stars">&#9670; &#9670; &#9670; &#9670; &#9670;</div><blockquote>Could not be happier with Atlas Design &amp; Build! John transformed our living room and dining room with custom wainscoting and trim work in Doylestown, and it came out even better than we imagined. The craftsmanship was excellent, everything was clean and well organized, and they kept us updated throughout the project. Highly recommend!</blockquote><p class="review-author">— Sophia Bica, Doylestown</p></div>
       <div class="review"><div class="review-stars">&#9670; &#9670; &#9670; &#9670; &#9670;</div><blockquote>John and his team were top notch from start to finish. Their professionalism shined throughout the whole process. The attention to detail was second to none. Highly recommend!</blockquote><p class="review-author">— Robert Ryan</p></div>
       <div class="review"><div class="review-stars">&#9670; &#9670; &#9670; &#9670; &#9670;</div><blockquote>John takes tremendous pride in the work that he undertakes. Each detail is carefully considered and executed precisely. He is reliable, professional and personable.</blockquote><p class="review-author">— Tommy Blaney</p></div>
       <div class="review"><div class="review-stars">&#9670; &#9670; &#9670; &#9670; &#9670;</div><blockquote>John is a true professional who goes above and beyond to bring your vision to life. His craftsmanship is shown in the attention to detail he puts into every project.</blockquote><p class="review-author">— Chris Anastasides</p></div>
