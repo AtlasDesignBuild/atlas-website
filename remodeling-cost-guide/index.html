@@ -188,9 +188,9 @@
         </div>
         <button type="submit" class="btn btn-primary">Get the guide</button>
       </form>
-<script>
+      <script>
         // Show "Who referred you?" or "Please tell us where" based on the source selection.
-        // Hidden fields stay disabled so they are not submitted; without JS they stay hidden.
+        // Hidden or blank fields are disabled so they are not submitted; without JS they stay hidden.
         (function () {
           document.querySelectorAll('select[name="how_did_you_hear"]').forEach(function (sel) {
             var form = sel.form;
@@ -207,6 +207,15 @@
               });
             }
             sel.addEventListener('change', update);
+            // A shown field left blank is not sent, so the email has no empty label
+            form.addEventListener('submit', function () {
+              boxes.forEach(function (box) {
+                var input = box.querySelector('input');
+                if (!input.value.trim()) input.disabled = true;
+              });
+            });
+            // Re-enable a shown field if the visitor comes back to the page
+            window.addEventListener('pageshow', update);
             update();
           });
         })();
