@@ -1,0 +1,54 @@
+name: IndexNow
+
+# After each push to main, wait for the Hostinger deploy, then tell IndexNow
+# (Bing, Yandex and other participating engines) which pages changed.
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  submit:
+    runs-on: ubuntu-latest
+    env:
+      HOST: atlasdesignandbuild.com
+      KEY: 4415bfd1a9d6599a9bc07057a3aab340
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: List changed HTML pages
+        id: urls
+        run: |
+          BEFORE="${{ github.event.before }}"
+          # Fall back to the previous commit if the push has no usable "before"
+          if ! git cat-file -e "$BEFORE^{commit}" 2>/dev/null; then
+            BEFORE="HEAD~1"
+          fi
+          git diff --name-only --diff-filter=ACMR "$BEFORE" "${{ github.sha }}" -- '*.html' \
+            | grep -v '^\.github/' \
+            | sed -E -e 's#(^|/)index\.html$#\1#' -e "s#^#https://$HOST/#" \
+            | sort -u > urls.txt || true
+          echo "Changed pages:"; cat urls.txt
+          echo "count=$(wc -l < urls.txt | tr -d ' ')" >> "$GITHUB_OUTPUT"
+
+      - name: Wait for Hostinger deploy
+        if: steps.urls.outputs.count != '0'
+        run: sleep 180
+
+      - name: Submit to IndexNow
+        if: steps.urls.outputs.count != '0'
+        run: |
+          jq -R . urls.txt | jq -s \
+            --arg host "$HOST" --arg key "$KEY" \
+            '{host: $host, key: $key, keyLocation: "https://\($host)/\($key).txt", urlList: .}' > payload.json
+          cat payload.json
+          STATUS=$(curl -sS -o response.txt -w '%{http_code}' -X POST https://api.indexnow.org/indexnow \
+            -H 'Content-Type: application/json; charset=utf-8' --data @payload.json)
+          echo "IndexNow responded HTTP $STATUS"; cat response.txt
+          case "$STATUS" in 200|202) ;; *) exit 1 ;; esac
+
+      - name: No HTML changed
+        if: steps.urls.outputs.count == '0'
+        run: echo "No HTML pages changed in this push, skipping IndexNow."

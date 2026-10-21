@@ -25,6 +25,18 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://atlasdesignandbuild.com/about/john-foy/</loc>
+    <lastmod>2026-10-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://atlasdesignandbuild.com/about/rachel-foy/</loc>
+    <lastmod>2026-10-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://atlasdesignandbuild.com/lehigh-valley/</loc>
     <lastmod>2026-10-20</lastmod>
     <changefreq>monthly</changefreq>
