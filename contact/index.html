@@ -411,6 +411,14 @@
                 <option>Social media</option>
                 <option>Other</option>
               </select>
+              <div class="contact-form-group" data-source-field="referral" data-display="block" style="display:none; margin:22px 0 0;">
+                <label for="referred_by">Who referred you?</label>
+                <input type="text" id="referred_by" name="referred_by" placeholder="Name (and company, if a realtor or designer)" disabled />
+              </div>
+              <div class="contact-form-group" data-source-field="other" data-display="block" style="display:none; margin:22px 0 0;">
+                <label for="source_other">Please tell us where</label>
+                <input type="text" id="source_other" name="source_other" disabled />
+              </div>
             </div>
           </div>
 
@@ -433,6 +441,29 @@
 
           <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center; padding-top:14px; padding-bottom:14px;">Request a consultation</button>
         </form>
+<script>
+          // Show "Who referred you?" or "Please tell us where" based on the source selection.
+          // Hidden fields stay disabled so they are not submitted; without JS they stay hidden.
+          (function () {
+            document.querySelectorAll('select[name="how_did_you_hear"]').forEach(function (sel) {
+              var form = sel.form;
+              var boxes = form.querySelectorAll('[data-source-field]');
+              function update() {
+                var v = sel.value;
+                boxes.forEach(function (box) {
+                  var kind = box.getAttribute('data-source-field');
+                  var on = kind === 'referral' ? v.indexOf('Referral from') === 0 : v === 'Other';
+                  var input = box.querySelector('input');
+                  if (!on) input.value = '';
+                  input.disabled = !on;
+                  box.style.display = on ? box.getAttribute('data-display') : 'none';
+                });
+              }
+              sel.addEventListener('change', update);
+              update();
+            });
+          })();
+        </script>
       </div>
 
       <div class="contact-sidebar">
