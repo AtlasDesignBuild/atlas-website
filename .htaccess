@@ -19,6 +19,9 @@ RewriteRule ^inquiries/?$ https://atlasdesignandbuild.com/contact/ [R=301,L]
 RewriteRule ^home/?$ https://atlasdesignandbuild.com/ [R=301,L]
 RewriteRule ^whole-home-additions-1/?$ https://atlasdesignandbuild.com/services/whole-home-renovation/ [R=301,L]
 
+# Tile installation town pages, consolidated into the tile hub (October 2026)
+RewriteRule ^services/tile-installation/(doylestown|newtown|yardley|langhorne|warrington|chalfont|new-hope|montgomery-county|easton|forks-township|palmer-township|williams-township|bethlehem-township)(?:/.*)?$ https://atlasdesignandbuild.com/services/tile-installation/ [R=301,L]
+
 # 301 redirect: add the trailing slash to folder URLs in one hop, straight to the
 # https non-www URL (e.g. /services/bathroom/doylestown → /services/bathroom/doylestown/).
 # Without this the server adds the slash as an extra hop after the www/https redirects.
