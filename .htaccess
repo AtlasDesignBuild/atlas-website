@@ -19,6 +19,13 @@ RewriteRule ^inquiries/?$ https://atlasdesignandbuild.com/contact/ [R=301,L]
 RewriteRule ^home/?$ https://atlasdesignandbuild.com/ [R=301,L]
 RewriteRule ^whole-home-additions-1/?$ https://atlasdesignandbuild.com/services/whole-home-renovation/ [R=301,L]
 
+# 301 redirect: add the trailing slash to folder URLs in one hop, straight to the
+# https non-www URL (e.g. /services/bathroom/doylestown → /services/bathroom/doylestown/).
+# Without this the server adds the slash as an extra hop after the www/https redirects.
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteCond %{REQUEST_URI} !/$
+RewriteRule ^(.*)$ https://atlasdesignandbuild.com/$1/ [R=301,L]
+
 # 301 redirects: www → non-www, http → https
 RewriteCond %{HTTP_HOST} ^www\.atlasdesignandbuild\.com$ [NC]
 RewriteRule ^ https://atlasdesignandbuild.com%{REQUEST_URI} [R=301,L]
