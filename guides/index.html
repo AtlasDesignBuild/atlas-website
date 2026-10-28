@@ -75,6 +75,29 @@
 <meta property="og:image" content="https://atlasdesignandbuild.com/assets/img/kitchen-hero-4.jpg" />
 <meta name="twitter:card" content="summary_large_image" />
 <style>
+  .guide-filter { margin: 0 0 8px; }
+  .guide-filter[hidden] { display: none; }
+  .guide-filter-row { display: flex; flex-wrap: wrap; align-items: center; gap: 16px 24px; }
+  .guide-search { position: relative; flex: 1 1 320px; max-width: 460px; }
+  .guide-search label { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+  .guide-search input { width: 100%; font-family: var(--sans); font-size: 16px; color: var(--ink); background: var(--paper-card); border: 1px solid rgba(42,38,33,0.35); border-radius: 2px; padding: 13px 44px 13px 16px; -webkit-appearance: none; appearance: none; }
+  .guide-search input::placeholder { color: var(--ink-soft); opacity: 1; }
+  .guide-search input::-webkit-search-cancel-button { -webkit-appearance: none; display: none; }
+  .guide-search input:focus { outline: 2px solid var(--accent-deep); outline-offset: 1px; border-color: var(--accent-deep); }
+  .guide-search-clear { position: absolute; right: 6px; top: 50%; transform: translateY(-50%); width: 34px; height: 34px; border: 0; background: transparent; color: var(--ink-soft); font-size: 22px; line-height: 1; border-radius: 2px; }
+  .guide-search-clear:hover { color: var(--ink); }
+  .guide-search-clear[hidden] { display: none; }
+  .guide-cats { display: flex; flex-wrap: wrap; gap: 8px; }
+  .guide-cat { font-family: var(--sans); font-size: 12px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink); background: transparent; border: 1px solid rgba(42,38,33,0.35); border-radius: 999px; padding: 9px 16px; min-height: 40px; transition: background 0.2s, color 0.2s, border-color 0.2s; }
+  .guide-cat:hover { border-color: var(--ink); }
+  .guide-cat[aria-pressed="true"] { background: var(--ink); border-color: var(--ink); color: var(--paper); }
+  .guide-cat:focus-visible, .guide-search-clear:focus-visible, .guide-reset:focus-visible { outline: 2px solid var(--accent-deep); outline-offset: 2px; }
+  .guide-filter-status { font-family: var(--sans); font-size: 13px; color: var(--ink-soft); margin: 14px 0 0; }
+  .guide-empty { font-family: var(--sans); font-size: 16px; color: var(--ink-soft); text-align: center; padding: 40px 0 8px; margin: 0; }
+  .guide-empty[hidden] { display: none; }
+  .guide-reset { font: inherit; color: var(--accent-deep); background: none; border: 0; padding: 0; text-decoration: underline; text-underline-offset: 3px; cursor: pointer; }
+  .guide-card[hidden] { display: none; }
+  @media (max-width: 640px) { .guide-search { flex-basis: 100%; max-width: none; } }
   .guides-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2rem; }
   @media (max-width: 768px) { .guides-grid { grid-template-columns: 1fr; } }
   @media (min-width: 769px) and (max-width: 1024px) { .guides-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
@@ -154,9 +177,25 @@
 
 <section class="section" style="padding-top:24px;">
   <div class="container">
-    <div class="guides-grid">
+    <div class="guide-filter" id="guide-filter" hidden>
+      <div class="guide-filter-row">
+        <div class="guide-search" role="search">
+          <label for="guide-search-input">Search guides</label>
+          <input type="search" id="guide-search-input" placeholder="Search guides" autocomplete="off" aria-controls="guides-grid">
+          <button type="button" class="guide-search-clear" aria-label="Clear search" hidden>&times;</button>
+        </div>
+        <div class="guide-cats" role="group" aria-label="Filter guides by category">
+          <button type="button" class="guide-cat" data-cat="all" aria-pressed="true">All</button>
+          <button type="button" class="guide-cat" data-cat="cost" aria-pressed="false">Cost</button>
+          <button type="button" class="guide-cat" data-cat="design" aria-pressed="false">Design</button>
+          <button type="button" class="guide-cat" data-cat="planning" aria-pressed="false">Planning</button>
+        </div>
+      </div>
+      <p class="guide-filter-status" aria-live="polite"></p>
+    </div>
+    <div class="guides-grid" id="guides-grid">
 
-      <article class="guide-card" data-date="2026-10-26">
+      <article class="guide-card" data-category="design" data-keywords="basement, flooring, lighting, layout, moisture, egress, ceiling height, home gym, guest suite, Bucks County, Montgomery County, Lehigh Valley" data-date="2026-10-26">
         <a href="/guides/basement-finishing-ideas/"><div class="photo" style="background-image:url('/assets/img/guide-basement-finishing-ideas.webp')"></div></a>
         <div class="guide-card-body">
           <span class="tag">Design guide</span>
@@ -167,7 +206,7 @@
         </div>
       </article>
 
-      <article class="guide-card" data-date="2026-02-03">
+      <article class="guide-card" data-category="cost" data-keywords="kitchen, cabinets, countertops, backsplash, appliances, layout, plumbing, electrical, permits, timeline, budget, historic homes, Doylestown, Newtown, Yardley, Bucks County, Montgomery County, price, pricing, older homes" data-date="2026-02-03">
         <a href="/guides/kitchen-remodel-cost-bucks-county/"><div class="photo" style="background-image:url('/assets/img/kitchen-hero-4.jpg')"></div></a>
         <div class="guide-card-body">
           <span class="tag">Cost guide</span>
@@ -178,7 +217,7 @@
         </div>
       </article>
 
-      <article class="guide-card" data-date="2026-02-11">
+      <article class="guide-card" data-category="cost" data-keywords="bathroom, tile, shower, vanity, lighting, layout, plumbing, moisture, budget, primary suite, historic homes, Doylestown, Newtown, Bucks County, Montgomery County, price, pricing, older homes" data-date="2026-02-11">
         <a href="/guides/bathroom-remodel-cost-bucks-county/"><div class="photo" style="background-image:url('/assets/img/bathroom.webp')"></div></a>
         <div class="guide-card-body">
           <span class="tag">Cost guide</span>
@@ -189,7 +228,7 @@
         </div>
       </article>
 
-      <article class="guide-card" data-date="2026-02-19">
+      <article class="guide-card" data-category="cost" data-keywords="bathroom, basement, flooring, lighting, plumbing, electrical, moisture, egress, ceiling height, permits, timeline, budget, Bucks County, Montgomery County, price, pricing" data-date="2026-02-19">
         <a href="/guides/basement-finishing-cost-bucks-county/"><div class="photo" style="background-image:url('/assets/img/basement.webp')"></div></a>
         <div class="guide-card-body">
           <span class="tag">Cost guide</span>
@@ -200,7 +239,7 @@
         </div>
       </article>
 
-      <article class="guide-card" data-date="2026-03-20">
+      <article class="guide-card" data-category="design" data-keywords="bathroom, tile, shower, tub, vanity, flooring, lighting, layout, small spaces, Bucks County, Montgomery County" data-date="2026-03-20">
         <a href="/guides/small-bathroom-remodel-ideas/"><div class="photo" style="background-image:url('/assets/img/guide-small-bathroom.webp')"></div></a>
         <div class="guide-card-body">
           <span class="tag">Design guide</span>
@@ -211,7 +250,7 @@
         </div>
       </article>
 
-      <article class="guide-card" data-date="2026-03-12">
+      <article class="guide-card" data-category="cost" data-keywords="kitchen, tile, cabinets, countertops, quartz, backsplash, appliances, flooring, lighting, layout, plumbing, budget, natural stone, Bucks County, price, pricing" data-date="2026-03-12">
         <a href="/guides/low-cost-kitchen-remodel/"><div class="photo" style="background-image:url('/assets/img/hero.webp')"></div></a>
         <div class="guide-card-body">
           <span class="tag">Cost guide</span>
@@ -222,7 +261,7 @@
         </div>
       </article>
 
-      <article class="guide-card" data-date="2026-03-31">
+      <article class="guide-card" data-category="cost" data-keywords="kitchen, cabinets, countertops, appliances, lighting, layout, plumbing, electrical, small spaces, Bucks County, price, pricing" data-date="2026-03-31">
         <a href="/guides/10x10-kitchen-remodel-cost/"><div class="photo" style="background-image:url('/assets/img/guide-10x10-kitchen.webp')"></div></a>
         <div class="guide-card-body">
           <span class="tag">Cost guide</span>
@@ -233,7 +272,7 @@
         </div>
       </article>
 
-      <article class="guide-card" data-date="2026-03-05">
+      <article class="guide-card" data-category="cost" data-keywords="bathroom, basement, lighting, plumbing, moisture, egress, ceiling height, built-ins, calculator, cost per square foot, Bucks County, price, pricing" data-date="2026-03-05">
         <a href="/guides/basement-finishing-cost-calculator/"><div class="photo" style="background-image:url('/assets/img/wholehome.webp')"></div></a>
         <div class="guide-card-body">
           <span class="tag">Cost guide</span>
@@ -244,7 +283,7 @@
         </div>
       </article>
 
-      <article class="guide-card" data-date="2026-02-26">
+      <article class="guide-card" data-category="cost" data-keywords="plumbing, home addition, permits, timeline, whole home, historic homes, cost per square foot, Doylestown, Bucks County, price, pricing, older homes" data-date="2026-02-26">
         <a href="/guides/home-addition-cost-bucks-county/"><div class="photo" style="background-image:url('/assets/img/about.webp')"></div></a>
         <div class="guide-card-body">
           <span class="tag">Cost guide</span>
@@ -256,10 +295,10 @@
       </article>
 
 
-      <article class="guide-card" data-date="2026-04-08">
+      <article class="guide-card" data-category="planning" data-keywords="kitchen, cabinets, countertops, appliances, layout, plumbing, electrical, permits, timeline, Doylestown, Newtown, Warrington, Bucks County, Montgomery County, schedule" data-date="2026-04-08">
         <a href="/guides/how-long-does-a-kitchen-remodel-take/"><div class="photo" style="background-image:url('/assets/img/guide-kitchen-timeline.webp')"></div></a>
         <div class="guide-card-body">
-          <span class="tag">Kitchen remodeling</span>
+          <span class="tag">Planning guide</span>
           <h2>How long does a kitchen remodel take?</h2>
           <p class="guide-meta">By <a href="/about/rachel-foy/" style="text-decoration:underline; text-underline-offset:3px;">Rachel Foy</a> &middot; Published April 8, 2026</p>
           <p>What to expect from design through final walkthrough, and what extends the schedule in Bucks County.</p>
@@ -267,7 +306,7 @@
         </div>
       </article>
 
-      <article class="guide-card" data-date="2026-04-17">
+      <article class="guide-card" data-category="cost" data-keywords="kitchen, bathroom, flooring, home addition, budget, whole home, primary suite, Bucks County, Montgomery County, price, pricing" data-date="2026-04-17">
         <a href="/guides/whole-home-renovation-cost-bucks-county/"><div class="photo" style="background-image:url('/assets/img/guide-wholehome.webp')"></div></a>
         <div class="guide-card-body">
           <span class="tag">Cost guide</span>
@@ -278,7 +317,7 @@
         </div>
       </article>
 
-      <article class="guide-card" data-date="2026-04-25">
+      <article class="guide-card" data-category="planning" data-keywords="kitchen, permits, contractor, Bucks County, hiring" data-date="2026-04-25">
         <a href="/guides/how-to-choose-a-contractor-bucks-county/"><div class="photo" style="background-image:url('/assets/img/guide-contractor.webp')"></div></a>
         <div class="guide-card-body">
           <span class="tag">Planning guide</span>
@@ -289,10 +328,10 @@
         </div>
       </article>
 
-      <article class="guide-card" data-date="2026-05-06">
+      <article class="guide-card" data-category="cost" data-keywords="kitchen, cabinets, countertops, appliances, layout, plumbing, electrical, permits, timeline, budget, historic homes, Doylestown, Newtown, Yardley, Langhorne, Warrington, New Hope, Bucks County, price, pricing, older homes" data-date="2026-05-06">
         <a href="/guides/doylestown-kitchen-remodel-cost/"><div class="photo" style="background-image:url('/assets/img/guide-doylestown-kitchen.webp')"></div></a>
         <div class="guide-card-body">
-          <span class="tag">Kitchen remodeling</span>
+          <span class="tag">Cost guide</span>
           <h2>Doylestown kitchen remodel cost guide</h2>
           <p class="guide-meta">By <a href="/about/rachel-foy/" style="text-decoration:underline; text-underline-offset:3px;">Rachel Foy</a> &middot; Published May 6, 2026</p>
           <p>Kitchen remodel costs in Doylestown, what older home conditions to plan for and how permitting works.</p>
@@ -300,7 +339,7 @@
         </div>
       </article>
 
-      <article class="guide-card" data-date="2026-05-14">
+      <article class="guide-card" data-category="cost" data-keywords="bathroom, tile, shower, tub, vanity, flooring, layout, plumbing, permits, timeline, primary suite, powder room, Newtown, Bucks County, price, pricing, half bath" data-date="2026-05-14">
         <a href="/guides/newtown-bathroom-remodel-cost/"><div class="photo" style="background-image:url('/assets/img/guide-newtown-bathroom.webp')"></div></a>
         <div class="guide-card-body">
           <span class="tag">Cost guide</span>
@@ -311,7 +350,7 @@
         </div>
       </article>
 
-      <article class="guide-card" data-date="2026-05-22">
+      <article class="guide-card" data-category="cost" data-keywords="kitchen, flooring, HVAC, home addition, permits, cost per square foot, Bucks County, Montgomery County, price, pricing" data-date="2026-05-22">
         <a href="/guides/home-addition-cost-per-square-foot-pa/"><div class="photo" style="background-image:url('/assets/img/guide-addition.webp')"></div></a>
         <div class="guide-card-body">
           <span class="tag">Cost guide</span>
@@ -322,7 +361,7 @@
         </div>
       </article>
 
-      <article class="guide-card" data-date="2026-06-04">
+      <article class="guide-card" data-category="planning" data-keywords="kitchen, bathroom, cabinets, countertops, appliances, lighting, layout, ROI, Bucks County, resale, home value" data-date="2026-06-04">
         <a href="/guides/kitchen-remodel-roi-home-value/"><div class="photo" style="background-image:url('/assets/img/guide-kitchen-roi.webp')"></div></a>
         <div class="guide-card-body">
           <span class="tag">Planning guide</span>
@@ -333,7 +372,7 @@
         </div>
       </article>
 
-      <article class="guide-card" data-date="2026-06-10">
+      <article class="guide-card" data-category="planning" data-keywords="basement, plumbing, electrical, home addition, permits, timeline, contractor, historic homes, Doylestown, Newtown, Yardley, Warrington, New Hope, Bucks County, older homes" data-date="2026-06-10">
         <a href="/guides/permits-home-remodeling-bucks-county/"><div class="photo" style="background-image:url('/assets/img/guide-permits.webp')"></div></a>
         <div class="guide-card-body">
           <span class="tag">Planning guide</span>
@@ -344,7 +383,7 @@
         </div>
       </article>
 
-      <article class="guide-card" data-date="2026-07-09">
+      <article class="guide-card" data-category="design" data-keywords="kitchen, bathroom, layout, plumbing, millwork, design trends, paint, Bucks County" data-date="2026-07-09">
         <a href="/guides/timed-vs-timeless-remodel/"><div class="photo" style="background-image:url('/assets/img/guide-timeless-interior.jpg')"></div></a>
         <div class="guide-card-body">
           <span class="tag">Design guide</span>
@@ -355,7 +394,7 @@
         </div>
       </article>
 
-      <article class="guide-card" data-date="2026-07-14">
+      <article class="guide-card" data-category="cost" data-keywords="flooring, layout, millwork, trim, wainscoting, built-ins, timeline, budget, whole home, paint, Bucks County, Montgomery County, Lehigh Valley, price, pricing" data-date="2026-07-14">
         <a href="/guides/interior-millwork-cost-bucks-county/"><div class="photo" style="background-image:url('/assets/img/millwork.webp')"></div></a>
         <div class="guide-card-body">
           <span class="tag">Cost guide</span>
@@ -366,7 +405,7 @@
         </div>
       </article>
 
-      <article class="guide-card" data-date="2026-07-22">
+      <article class="guide-card" data-category="design" data-keywords="kitchen, cabinets, countertops, backsplash, island, lighting, layout, storage, design trends, Bucks County, Montgomery County, Lehigh Valley" data-date="2026-07-22">
         <a href="/guides/kitchen-design-ideas/"><div class="photo" style="background-image:url('/assets/img/guide-kitchen-design.jpg')"></div></a>
         <div class="guide-card-body">
           <span class="tag">Design guide</span>
@@ -377,7 +416,7 @@
         </div>
       </article>
 
-      <article class="guide-card" data-date="2026-07-30">
+      <article class="guide-card" data-category="design" data-keywords="bathroom, tile, vanity, flooring, lighting, layout, moisture, storage, budget, primary suite, design trends, Bucks County, Montgomery County, Lehigh Valley" data-date="2026-07-30">
         <a href="/guides/bathroom-remodel-ideas/"><div class="photo" style="background-image:url('/assets/img/guide-bathroom-remodel-ideas.jpg')"></div></a>
         <div class="guide-card-body">
           <span class="tag">Design guide</span>
@@ -388,7 +427,7 @@
         </div>
       </article>
 
-      <article class="guide-card" data-date="2026-08-07">
+      <article class="guide-card" data-category="design" data-keywords="bathroom, tile, shower, flooring, layout, moisture, small spaces, porcelain, natural stone, Bucks County, Montgomery County, Lehigh Valley" data-date="2026-08-07">
         <a href="/guides/bathroom-tile-ideas/"><div class="photo" style="background-image:url('/assets/img/guide-bathroom-tile.jpg')"></div></a>
         <div class="guide-card-body">
           <span class="tag">Design guide</span>
@@ -399,7 +438,7 @@
         </div>
       </article>
 
-      <article class="guide-card" data-date="2026-08-15">
+      <article class="guide-card" data-category="cost" data-keywords="cabinets, lighting, millwork, built-ins, storage, timeline, paint, Bucks County, Montgomery County, Lehigh Valley, price, pricing" data-date="2026-08-15">
         <a href="/guides/custom-built-ins-cost-bucks-county/"><div class="photo" style="background-image:url('/assets/img/guide-custom-builtins.jpg')"></div></a>
         <div class="guide-card-body">
           <span class="tag">Cost guide</span>
@@ -410,7 +449,7 @@
         </div>
       </article>
 
-      <article class="guide-card" data-date="2026-08-23">
+      <article class="guide-card" data-category="design" data-keywords="kitchen, cabinets, countertops, appliances, layout, storage, small spaces, Bucks County, Montgomery County, Lehigh Valley" data-date="2026-08-23">
         <a href="/guides/small-kitchen-ideas/"><div class="photo" style="background-image:url('/assets/img/guide-small-kitchen.jpg')"></div></a>
         <div class="guide-card-body">
           <span class="tag">Design guide</span>
@@ -421,7 +460,7 @@
         </div>
       </article>
 
-      <article class="guide-card" data-date="2026-08-31">
+      <article class="guide-card" data-category="design" data-keywords="kitchen, bathroom, tile, cabinets, backsplash, layout, porcelain, natural stone, Bucks County, Montgomery County, Lehigh Valley" data-date="2026-08-31">
         <a href="/guides/kitchen-backsplash-tile-ideas/"><div class="photo" style="background-image:url('/assets/img/guide-backsplash-tile.jpg')"></div></a>
         <div class="guide-card-body">
           <span class="tag">Design guide</span>
@@ -432,7 +471,7 @@
         </div>
       </article>
 
-      <article class="guide-card" data-date="2026-09-08">
+      <article class="guide-card" data-category="design" data-keywords="bathroom, shower, vanity, flooring, lighting, layout, moisture, powder room, small spaces, Doylestown, Bucks County, Montgomery County, Lehigh Valley, half bath" data-date="2026-09-08">
         <a href="/guides/small-bathroom-ideas-beyond-basic/"><div class="photo" style="background-image:url('/assets/img/guide-small-bathroom-elevated.webp')"></div></a>
         <div class="guide-card-body">
           <span class="tag">Design guide</span>
@@ -443,7 +482,7 @@
         </div>
       </article>
 
-      <article class="guide-card" data-date="2026-09-26">
+      <article class="guide-card" data-category="cost" data-keywords="kitchen, cabinets, countertops, appliances, layout, plumbing, electrical, permits, Easton, Forks Township, Bucks County, Montgomery County, Lehigh Valley, price, pricing" data-date="2026-09-26">
         <a href="/guides/kitchen-remodel-cost-lehigh-valley/"><div class="photo" style="background-image:url('/assets/img/guide-kitchen-lehigh-valley.webp')"></div></a>
         <div class="guide-card-body">
           <span class="tag">Cost guide</span>
@@ -454,7 +493,7 @@
         </div>
       </article>
 
-      <article class="guide-card" data-date="2026-10-20">
+      <article class="guide-card" data-category="cost" data-keywords="bathroom, tile, shower, vanity, flooring, layout, plumbing, permits, primary suite, Easton, Forks Township, Bucks County, Montgomery County, Lehigh Valley, price, pricing, older homes" data-date="2026-10-20">
         <a href="/guides/bathroom-remodel-cost-lehigh-valley/"><div class="photo" style="background-image:url('/assets/img/guide-bathroom-lehigh-valley.webp')"></div></a>
         <div class="guide-card-body">
           <span class="tag">Cost guide</span>
@@ -465,7 +504,7 @@
         </div>
       </article>
 
-      <article class="guide-card" data-date="2026-10-20">
+      <article class="guide-card" data-category="cost" data-keywords="bathroom, basement, moisture, permits, Easton, Forks Township, Palmer Township, Bucks County, Lehigh Valley, price, pricing" data-date="2026-10-20">
         <a href="/guides/basement-finishing-cost-lehigh-valley/"><div class="photo" style="background-image:url('/assets/img/guide-basement-lehigh-valley.webp')"></div></a>
         <div class="guide-card-body">
           <span class="tag">Cost guide</span>
@@ -476,7 +515,7 @@
         </div>
       </article>
 
-      <article class="guide-card" data-date="2026-10-20">
+      <article class="guide-card" data-category="cost" data-keywords="kitchen, bathroom, plumbing, home addition, permits, historic homes, cost per square foot, Easton, Forks Township, Williams Township, Bucks County, Montgomery County, Lehigh Valley, price, pricing, older homes" data-date="2026-10-20">
         <a href="/guides/home-addition-cost-lehigh-valley/"><div class="photo" style="background-image:url('/assets/img/guide-addition-lehigh-valley.webp')"></div></a>
         <div class="guide-card-body">
           <span class="tag">Cost guide</span>
@@ -487,7 +526,7 @@
         </div>
       </article>
 
-      <article class="guide-card" data-date="2026-10-19">
+      <article class="guide-card" data-category="cost" data-keywords="kitchen, cabinets, countertops, backsplash, appliances, flooring, layout, plumbing, permits, budget, calculator, Bucks County, Montgomery County, Lehigh Valley, price, pricing" data-date="2026-10-19">
         <a href="/guides/kitchen-remodel-cost-calculator/"><div class="photo" style="background-image:url('/assets/img/guide-kitchen-cost-calculator.webp')"></div></a>
         <div class="guide-card-body">
           <span class="tag">Cost guide</span>
@@ -498,7 +537,7 @@
         </div>
       </article>
 
-      <article class="guide-card" data-date="2026-10-12">
+      <article class="guide-card" data-category="cost" data-keywords="kitchen, bathroom, tile, flooring, layout, budget, porcelain, natural stone, Bucks County, Montgomery County, Lehigh Valley, price, pricing" data-date="2026-10-12">
         <a href="/guides/tile-flooring-cost-bucks-county/"><div class="photo" style="background-image:url('/assets/img/guide-tile-flooring.webp')"></div></a>
         <div class="guide-card-body">
           <span class="tag">Cost guide</span>
@@ -509,7 +548,7 @@
         </div>
       </article>
 
-      <article class="guide-card" data-date="2026-10-05">
+      <article class="guide-card" data-category="design" data-keywords="kitchen, cabinets, backsplash, farmhouse, paint, Bucks County, Montgomery County, Lehigh Valley" data-date="2026-10-05">
         <a href="/guides/farmhouse-kitchen-ideas-bucks-county/"><div class="photo" style="background-image:url('/assets/img/guide-farmhouse-kitchen.webp')"></div></a>
         <div class="guide-card-body">
           <span class="tag">Design guide</span>
@@ -520,7 +559,7 @@
         </div>
       </article>
 
-      <article class="guide-card" data-date="2026-09-28">
+      <article class="guide-card" data-category="planning" data-keywords="kitchen, bathroom, layout, home addition, permits, timeline, spring planning, Bucks County, Montgomery County, Lehigh Valley, schedule" data-date="2026-09-28">
         <a href="/guides/when-to-start-planning-spring-remodel/"><div class="photo" style="background-image:url('/assets/img/guide-spring-remodel-planning.webp')"></div></a>
         <div class="guide-card-body">
           <span class="tag">Planning guide</span>
@@ -531,7 +570,7 @@
         </div>
       </article>
 
-      <article class="guide-card" data-date="2026-09-16">
+      <article class="guide-card" data-category="design" data-keywords="bathroom, millwork, trim, wainscoting, farmhouse, historic homes, Bucks County, Montgomery County, Lehigh Valley, older homes" data-date="2026-09-16">
         <a href="/guides/wainscoting-trim-ideas/"><div class="photo" style="background-image:url('/assets/img/guide-wainscoting-trim.webp')"></div></a>
         <div class="guide-card-body">
           <span class="tag">Design guide</span>
@@ -543,6 +582,7 @@
       </article>
 
     </div>
+    <p class="guide-empty" hidden>No guides match that search. Try a different word or <button type="button" class="guide-reset">browse all guides</button>.</p>
     <script>
       (function(){
         var grid=document.querySelector('.guides-grid');
@@ -550,6 +590,48 @@
         var cards=Array.from(grid.querySelectorAll('.guide-card[data-date]'));
         cards.sort(function(a,b){return b.dataset.date.localeCompare(a.dataset.date);});
         cards.forEach(function(c){grid.appendChild(c);});
+      })();
+    </script>
+    <script>
+      (function(){
+        var wrap=document.getElementById('guide-filter');
+        var grid=document.getElementById('guides-grid');
+        if(!wrap||!grid)return;
+        var input=document.getElementById('guide-search-input');
+        var clear=wrap.querySelector('.guide-search-clear');
+        var catBtns=Array.from(wrap.querySelectorAll('.guide-cat'));
+        var status=wrap.querySelector('.guide-filter-status');
+        var empty=document.querySelector('.guide-empty');
+        var cards=Array.from(grid.querySelectorAll('.guide-card'));
+        var cat='all';
+        var index=cards.map(function(c){
+          var t=function(sel){var e=c.querySelector(sel);return e?e.textContent:'';};
+          return [t('h2'),t('.guide-card-body > p:not(.guide-meta)'),t('.tag'),c.dataset.category||'',c.dataset.keywords||''].join(' ').toLowerCase();
+        });
+        function update(){
+          var words=input.value.toLowerCase().trim().split(/\s+/).filter(Boolean);
+          var shown=0;
+          cards.forEach(function(c,i){
+            var ok=(cat==='all'||c.dataset.category===cat)&&words.every(function(w){return index[i].indexOf(w)!==-1;});
+            c.hidden=!ok; if(ok)shown++;
+          });
+          clear.hidden=!input.value;
+          empty.hidden=shown!==0;
+          var filtered=words.length||cat!=='all';
+          status.textContent=filtered?(shown===1?'1 guide':shown+' guides')+' shown':'';
+        }
+        function setCat(c){
+          cat=c;
+          catBtns.forEach(function(b){b.setAttribute('aria-pressed',b.dataset.cat===c?'true':'false');});
+          update();
+        }
+        input.addEventListener('input',update);
+        input.addEventListener('keydown',function(e){if(e.key==='Escape'&&input.value){input.value='';update();}});
+        clear.addEventListener('click',function(){input.value='';update();input.focus();});
+        catBtns.forEach(function(b){b.addEventListener('click',function(){setCat(b.dataset.cat);});});
+        empty.querySelector('.guide-reset').addEventListener('click',function(){input.value='';setCat('all');input.focus();});
+        wrap.hidden=false;
+        update();
       })();
     </script>
   </div>
