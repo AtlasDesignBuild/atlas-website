@@ -185,6 +185,9 @@
   /* Town cards: three per row, with a short last row centered */
   .towns-grid { grid-template-columns: repeat(6, 1fr); }
   .towns-grid > .service-card { grid-column: span 2; }
+  .towns-grid h3 a { color: inherit; text-decoration: none; transition: color 0.2s; }
+  .towns-grid h3 a:hover, .towns-grid h3 a:focus-visible { color: var(--accent-deep); }
+  .towns-grid p a:hover { color: var(--ink); }
   .towns-grid > .service-card:nth-child(3n+1):nth-last-child(2) { grid-column: 2 / span 2; }
   .towns-grid > .service-card:nth-child(3n+1):last-child { grid-column: 3 / span 2; }
   @media (max-width: 760px) {
@@ -252,7 +255,7 @@
   <div class="container">
     <p class="eyebrow">Service area · Lehigh Valley</p>
     <h1 style="margin:0 auto;">Home remodeling in the Lehigh Valley</h1>
-    <p class="lede" style="margin:26px auto 0;">We work throughout the Lehigh Valley, from Easton to the surrounding townships. Atlas Design &amp; Build is a husband-and-wife design-build firm. We plan, design and build kitchens, bathrooms, basements and whole home renovations, and we manage every project ourselves from the first walkthrough to the final punch list.</p>
+    <p class="lede" style="margin:26px auto 0;">We work throughout the Lehigh Valley, from Easton to the surrounding townships. Atlas Design &amp; Build is a husband and wife design-build firm. We plan, design and build kitchens, bathrooms, basements and whole home renovations, and we manage every project ourselves from the first walkthrough to the final punch list.</p>
     <div class="hero-cta" style="justify-content:center; margin-top:32px;">
       <a href="/contact/" class="btn btn-primary">Schedule a consultation</a>
       <a href="tel:+14845419818" class="btn btn-ghost">Call (484) 541-9818</a>
@@ -271,72 +274,32 @@
     <div class="services-grid towns-grid">
       <article class="service-card">
         <div class="service-card-body">
-          <h3>Easton</h3>
-          <p>From College Hill Victorians to rowhomes and twins in the West Ward and South Side, much of Easton&#x27;s housing dates to the late 1800s and early 1900s. Our Easton work often starts with what is behind the walls: older plumbing, plaster and framing that needs to be brought up to date before new finishes go in.</p>
-          <ul>
-            <li><a href="/services/kitchen/easton/">Kitchen</a></li>
-            <li><a href="/services/bathroom/easton/">Bathroom</a></li>
-            <li><a href="/services/basement/easton/">Basement</a></li>
-            <li><a href="/services/whole-home-renovation/easton/">Whole home</a></li>
-            <li><a href="/services/tile-installation/">Tile</a></li>
-            <li><a href="/services/interior-millwork/easton/">Interior millwork</a></li>
-          </ul>
+          <h3><a href="/services/kitchen/easton/">Easton</a></h3>
+          <p>From College Hill Victorians to rowhomes and twins in the West Ward and South Side, much of Easton&#x27;s housing dates to the late 1800s and early 1900s. Our Easton work often starts with what is behind the walls: <a href="/services/whole-home-renovation/easton/" style="text-decoration:underline; text-underline-offset:3px;">older plumbing, plaster and framing</a> that needs to be brought up to date before new finishes go in.</p>
         </div>
       </article>
       <article class="service-card">
         <div class="service-card-body">
-          <h3>Forks Township</h3>
-          <p>Most Forks Township homes were built from the 1980s onward, along with a number of older farmhouses. Projects here usually focus on layout, storage and finishes rather than structural correction, with farmhouses as the exception.</p>
-          <ul>
-            <li><a href="/services/kitchen/forks-township/">Kitchen</a></li>
-            <li><a href="/services/bathroom/forks-township/">Bathroom</a></li>
-            <li><a href="/services/basement/forks-township/">Basement</a></li>
-            <li><a href="/services/whole-home-renovation/forks-township/">Whole home</a></li>
-            <li><a href="/services/tile-installation/">Tile</a></li>
-            <li><a href="/services/interior-millwork/forks-township/">Interior millwork</a></li>
-          </ul>
+          <h3><a href="/services/kitchen/forks-township/">Forks Township</a></h3>
+          <p>Most Forks Township homes were built from the 1980s onward, along with a number of older farmhouses. Projects here usually focus on layout, <a href="/services/interior-millwork/forks-township/" style="text-decoration:underline; text-underline-offset:3px;">storage and finishes</a> rather than structural correction, with farmhouses as the exception.</p>
         </div>
       </article>
       <article class="service-card">
         <div class="service-card-body">
-          <h3>Palmer Township</h3>
-          <p>Palmer Township combines mid-century ranches and split-levels near Easton with newer subdivisions. Mid-century homes often benefit from opening the main floor, while newer homes are ready for custom finishes.</p>
-          <ul>
-            <li><a href="/services/kitchen/palmer-township/">Kitchen</a></li>
-            <li><a href="/services/bathroom/palmer-township/">Bathroom</a></li>
-            <li><a href="/services/basement/palmer-township/">Basement</a></li>
-            <li><a href="/services/whole-home-renovation/palmer-township/">Whole home</a></li>
-            <li><a href="/services/tile-installation/">Tile</a></li>
-            <li><a href="/services/interior-millwork/palmer-township/">Interior millwork</a></li>
-          </ul>
+          <h3><a href="/services/kitchen/palmer-township/">Palmer Township</a></h3>
+          <p>Palmer Township combines mid-century ranches and split-levels near Easton with newer subdivisions. Mid-century homes often benefit from <a href="/services/whole-home-renovation/palmer-township/" style="text-decoration:underline; text-underline-offset:3px;">opening the main floor</a>, while newer homes are ready for custom finishes.</p>
         </div>
       </article>
       <article class="service-card">
         <div class="service-card-body">
-          <h3>Williams Township</h3>
-          <p>South of Easton, Williams Township is largely rural, with farmhouses that have grown over generations and custom homes on larger lots. Projects here often involve well water, septic systems and joining old construction with new.</p>
-          <ul>
-            <li><a href="/services/kitchen/williams-township/">Kitchen</a></li>
-            <li><a href="/services/bathroom/williams-township/">Bathroom</a></li>
-            <li><a href="/services/basement/williams-township/">Basement</a></li>
-            <li><a href="/services/whole-home-renovation/williams-township/">Whole home</a></li>
-            <li><a href="/services/tile-installation/">Tile</a></li>
-            <li><a href="/services/interior-millwork/williams-township/">Interior millwork</a></li>
-          </ul>
+          <h3><a href="/services/kitchen/williams-township/">Williams Township</a></h3>
+          <p>South of Easton, Williams Township is largely rural, with farmhouses that have grown over generations and custom homes on larger lots. Projects here often involve well water, septic systems and <a href="/services/whole-home-renovation/williams-township/" style="text-decoration:underline; text-underline-offset:3px;">joining old construction with new</a>.</p>
         </div>
       </article>
       <article class="service-card">
         <div class="service-card-body">
-          <h3>Bethlehem Township</h3>
-          <p>Between Bethlehem and Easton, Bethlehem Township spans postwar homes, 1960s and 1970s split-levels and newer colonials. Projects here often focus on opening split-level layouts and finishing builder-grade homes.</p>
-          <ul>
-            <li><a href="/services/kitchen/bethlehem-township/">Kitchen</a></li>
-            <li><a href="/services/bathroom/bethlehem-township/">Bathroom</a></li>
-            <li><a href="/services/basement/bethlehem-township/">Basement</a></li>
-            <li><a href="/services/whole-home-renovation/bethlehem-township/">Whole home</a></li>
-            <li><a href="/services/tile-installation/">Tile</a></li>
-            <li><a href="/services/interior-millwork/bethlehem-township/">Interior millwork</a></li>
-          </ul>
+          <h3><a href="/services/kitchen/bethlehem-township/">Bethlehem Township</a></h3>
+          <p>Between Bethlehem and Easton, Bethlehem Township spans postwar homes, 1960s and 1970s split-levels and newer colonials. Projects here often focus on opening split-level layouts and <a href="/services/interior-millwork/bethlehem-township/" style="text-decoration:underline; text-underline-offset:3px;">finishing builder-grade homes</a>.</p>
         </div>
       </article>
     </div>
