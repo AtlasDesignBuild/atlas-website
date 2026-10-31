@@ -27,7 +27,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
         <noscript><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet" /></noscript>
-<link rel="stylesheet" href="/assets/style.css?v=11" />
+<link rel="stylesheet" href="/assets/style.css?v=12" />
 <style>
   .article-body p,
   .article-body ul li,
@@ -361,7 +361,7 @@
           if (moisture === 'major') { low += 15000; high += 40000; }
           var formatNum = function(n) { return '$' + n.toLocaleString(); };
           document.getElementById('result-range').textContent = formatNum(low) + ' to ' + formatNum(high);
-          document.getElementById('result-note').textContent = 'This is a planning range based on typical Bucks County projects. Your actual cost depends on site conditions, exact selections and scope. We provide a detailed written proposal after a site visit.';
+          document.getElementById('result-note').textContent = 'This is a planning range based on typical Bucks County projects. Your actual cost depends on site conditions, exact selections and scope. After a site visit we provide a written budget range, and our design phase ends with an exact fixed price.';
           document.getElementById('result').style.display = 'block';
         }
       </script>
