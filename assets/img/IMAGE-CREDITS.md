@@ -39,6 +39,7 @@ Replace with Atlas project photography when available.
 | `guide-basement-lehigh-valley.webp` | `FtoTc6zKx2c` | Clay Banks ([@claybanks](https://unsplash.com/@claybanks)) | /guides/basement-finishing-cost-lehigh-valley/ (sourced October 2026) |
 | `guide-basement-finishing-ideas.webp` | `OaclQ1SHI1k` | Point3D Commercial Imaging Ltd. ([@3dottawa](https://unsplash.com/@3dottawa)) | /guides/basement-finishing-ideas/ (sourced October 2026) |
 | `guide-addition-lehigh-valley.webp` | `kkdfOe0iRu8` | Troy Mortier ([@troyscanon](https://unsplash.com/@troyscanon)) | /guides/home-addition-cost-lehigh-valley/ (sourced October 2026) |
+| `guide-mudroom-entryway.webp` | `CGZbE-Pa1S8` | Douglas Sheppard ([@candjstudios](https://unsplash.com/@candjstudios)) | /guides/mudroom-entryway-ideas/ (sourced November 2026, cropped to remove a branded handbag) |
 | `kitchen-palmer-township-hero.webp` | `1by_GbwEMwc` | Clay Elliot ([@ibidsy](https://unsplash.com/@ibidsy)) | /services/kitchen/palmer-township/ (sourced October 2026) |
 | `bathroom-palmer-township-hero.webp` | `ZDB00w2d5hY` | Smart Renovations ([@smartrenovationscanada](https://unsplash.com/@smartrenovationscanada)) | /services/bathroom/palmer-township/ (sourced October 2026) |
 | `basement-palmer-township-hero.webp` | `Tb4bUf6z9gI` | Point3D Commercial Imaging Ltd. ([@3dottawa](https://unsplash.com/@3dottawa)) | /services/basement/palmer-township/ (sourced October 2026) |
