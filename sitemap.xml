@@ -32,7 +32,7 @@
   </url>
   <url>
     <loc>https://atlasdesignandbuild.com/about/john-foy/</loc>
-    <lastmod>2026-11-02</lastmod>
+    <lastmod>2026-11-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -386,7 +386,7 @@
   <!-- Guides index -->
   <url>
     <loc>https://atlasdesignandbuild.com/guides/</loc>
-    <lastmod>2026-11-02</lastmod>
+    <lastmod>2026-11-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -607,6 +607,12 @@
   <url>
     <loc>https://atlasdesignandbuild.com/guides/mudroom-entryway-ideas/</loc>
     <lastmod>2026-11-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://atlasdesignandbuild.com/guides/tile-repair-or-replace/</loc>
+    <lastmod>2026-11-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
