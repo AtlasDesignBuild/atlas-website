@@ -1,4 +1,10 @@
 Options -Indexes
+
+# Keep internal docs and data files (README.md, IMAGE-CREDITS.md, CSVs) out of public reach
+<FilesMatch "\.(md|csv)$">
+  Require all denied
+</FilesMatch>
+
 RewriteEngine On
 
 # 301 redirects: legacy URLs → canonical pages. These run before the www/https
